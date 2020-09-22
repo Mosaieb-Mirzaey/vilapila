@@ -1,0 +1,219 @@
+
+/*IRANSans Font*/
+@font-face {font-family: 'IRANSansRegular';
+    src: url(../fonts/iransans/IRANSans.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANSans_UltraLight';
+    src: url(../fonts/iransans/IRANSans_UltraLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANSans_Light';
+    src: url(../fonts/iransans/IRANSans_Light.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANSans_Medium';
+    src: url(../fonts/iransans/IRANSans_Medium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANSans_Bold';
+    src: url(../fonts/iransans/IRANSans_Bold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+
+
+/*IRAN Yekan Font*/
+@font-face {font-family: 'IRANYekanRegular';
+    src: url(../fonts/IRANYekan/IRANYekanRegular.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANYekanThin';
+    src: url(../fonts/IRANYekan/IRANYekanThin.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANYekanLight';
+    src: url(../fonts/IRANYekan/IRANYekanLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANYekanMedium';
+    src: url(../fonts/IRANYekan/IRANYekanMedium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANYekanBold';
+    src: url(../fonts/IRANYekan/IRANYekanBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+
+@font-face {font-family: 'IRANYekanExtraBold';
+    src: url(../fonts/IRANYekan/IRANYekanExtraBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANYekanBlack';
+    src: url(../fonts/IRANYekan/IRANYekanBlack.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+
+
+
+
+
+html{
+    font-size: 10px;
+}
+
+body {
+    background-color: white;
+    font-family: IRANYekan;
+}
+
+a {
+    text-decoration: none;
+    /*font: 12px IRANYekan, sans-serif;*/
+}
+
+/* Header */
+
+header{
+    background: url(../image/Banner/Banner.png);
+    height: 500px;
+}
+
+header .mainNav{
+    background: linear-gradient(180deg, rgba(99, 120, 241, 0.7) 0%, rgba(99, 120, 241, 0.028) 100%);
+    color: white;
+}
+
+header .mainNav .navMenu>ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+}
+header .mainNav .navMenu>ul>li {
+    float: right;
+    padding: 5px;
+}
+
+header .mainNav a, header .mainNav .btnNav button {
+    color: white;
+    font-size: 0.8rem;
+    font-family: "IRANYekan ExtraBold";
+}
+
+header .mainNav ul>li>a:hover {
+    font-size: 1rem;
+    color: #FF6161;
+    text-shadow: 0 0 15px #FF6161;
+}
+
+header .mainNav .btnNav>button, header .mainNav .btnNav>.btn-group {
+    background: rgba(237, 81, 81, 0.8);
+    color: white;
+    width: 10rem;
+    height: 2.1rem;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+header .mainNav .btnNav>.btn-group>.btnR{
+    border-left: 1px solid #FFFFFF;
+    background: #9C31DF;
+    border-radius: 0 10px 10px 0;
+}
+header .mainNav .btnNav>.btn-group>.btnL{
+    border-right: 1px solid #FFFFFF;
+    background: #9C31DF;
+    border-radius: 10px 0 0 10px;
+}
+
+header .category {
+    background-color: #fdeaea;
+}
+
+header .category>form {
+
+}
+
+header .category ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+}
+
+header .category li {
+    float: right;
+    padding: 5px;
+}
+
+header .category li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+}
+
+header .category li a:hover {
+    background-color: #111111;
+}
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html{
+        font-size: 11px;
+    }
+
+    header .mainNav .btnNav>button, header .mainNav .btnNav>.btn-group {
+        /*width: 180px;*/
+        /*height: 45px;*/
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html{
+        font-size: 14px;
+    }
+
+}
+
+/* UHD devices (UHD desktops, 1400px and up) */
+@media (min-width: 1500px) {
+    html{
+        font-size: 17px;
+    }
+
+    header .mainNav a, header .mainNav .btnNav button {
+        /*font-size: 20px;*/
+    }
+    header .mainNav ul>li>a:hover {
+        /*font-size: 21px;*/
+    }
+    header .mainNav .btnNav>button, header .mainNav .btnNav>.btn-group {
+        /*width: 272px;*/
+        /*height: 60px;*/
+    }
+
+}
