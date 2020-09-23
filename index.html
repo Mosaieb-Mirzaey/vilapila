@@ -13,10 +13,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-animate.css">
 
-    <style>
 
-    </style>
 </head>
 
 <body>
@@ -27,7 +26,7 @@
             <span class="fa fa-bars text-white"></span>
         </button>
         <a class="navbar-brand" href="#">
-            <img src="image/Logo/logo.png" width="136px" alt="Logo website">
+            <img src="image/Logo/logo.png" alt="Logo website">
         </a>
         <div class="navMenu" id="navbar1">
             <ul class="navbarNav ml-auto">
@@ -42,18 +41,32 @@
                 </li>
             </ul>
         </div>
-        <div class="btnNav mt-md-1 ml-3">
+        <div class="btnNav mr-auto mt-md-3 ml-3">
             <button type="button" class="btn ml-2">ثبت رایگان اقامتگاه</button>
             <div class="btn-group mr-2" role="group" aria-label="Basic example">
                 <button type="button" class="btn w-50 btnR">ثبت نام</button>
                 <button type="button" class="btn w-50 btnL">ورود</button>
             </div>
+
+                <div class="btn-animate btn-group mr-2" role="group" aria-label="Basic example">
+                    <svg>
+                        <defs>
+                            <linearGradient id="grad1">
+                                <stop offset="0%" stop-color="#FF8282"/>
+                                <stop offset="100%" stop-color="#E178ED" />
+                            </linearGradient>
+                        </defs>
+                        <rect class="btn-svg" rx="10" fill="none" stroke="url(#grad1)" ></rect>
+                    </svg>
+                    <button type="button" class="btn w-50 btnR">ثبت نام</button>
+                    <button type="button" class="btn w-50 btnL">ورود</button>
+                </div>
         </div>
 
     </nav>
     <div class="category pt-2" id="navbar2">
         <form class="d-flex justify-content-center mx-auto my-lg-0">
-            <input class=" mr-sm-2" type="search" placeholder="جستجو در عاموتویز" aria-label="Search">
+            <input class="searchInput mr-sm-2" type="text" placeholder="جستجو در عاموتویز" aria-label="Search">
             <button class="my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
         </form>
         <ul class="mx-auto mt-2 mt-lg-0">
@@ -309,6 +322,8 @@
 <script src="js/isotope.pkgd.min.js "></script>
 <script src="js/wow.min.js "></script>
 <script src="js/scripts.js "></script>
+<script src="js/scripts-animate.js"></script>
+
 
 </body>
 

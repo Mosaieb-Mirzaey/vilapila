@@ -74,13 +74,18 @@ a {
 /* Header */
 
 header{
-    background: url(../image/Banner/Banner.png);
+    background: url(../image/Banner/Banner.png) no-repeat;
+    background-size: 100% auto;
     height: 500px;
 }
 
 header .mainNav{
-    background: linear-gradient(180deg, rgba(99, 120, 241, 0.7) 0%, rgba(99, 120, 241, 0.028) 100%);
+    background: linear-gradient(180deg, rgba(23, 52, 216, 0.7) 0%, rgba(99, 120, 241, 0.028) 100%);
     color: white;
+}
+
+header .mainNav .navbar-brand>img {
+    width: 9rem;
 }
 
 header .mainNav .navMenu>ul {
@@ -99,31 +104,48 @@ header .mainNav a, header .mainNav .btnNav button {
     color: white;
     font-size: 0.8rem;
     font-family: "IRANYekan ExtraBold";
+    transition: 0.5s;
 }
 
 header .mainNav ul>li>a:hover {
-    font-size: 1rem;
+    font-size: 0.92rem;
     color: #FF6161;
     text-shadow: 0 0 15px #FF6161;
+    transition: 0.5s;
+}
+
+header .mainNav .navbarNav {
+    margin-top: 0.5rem;
 }
 
 header .mainNav .btnNav>button, header .mainNav .btnNav>.btn-group {
-    background: rgba(237, 81, 81, 0.8);
     color: white;
     width: 10rem;
     height: 2.1rem;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff96;
     box-sizing: border-box;
     border-radius: 10px;
 }
+
+header .mainNav .btnNav>button {
+    /*background: rgba(237, 81, 81, 0.8);*/
+    transition: 1s;
+    background:linear-gradient(90deg, rgb(51, 31, 200) 0%, rgb(۲۲۲, ۱۰۲, ۱۰۲) 80%);
+}
+header .mainNav .btnNav>button:hover {
+    transition: 1s;
+    background: rgba(200, 01, 81, 0.8);
+    /*background:linear-gradient(90deg, rgb(255, 97, 97) 0%, rgb(51, 31, 200) 80%);*/
+}
+
 header .mainNav .btnNav>.btn-group>.btnR{
-    border-left: 1px solid #FFFFFF;
-    background: #9C31DF;
+    /*border-left: 1px solid #FFFFFF;*/
+    background: #3162df63;
     border-radius: 0 10px 10px 0;
 }
 header .mainNav .btnNav>.btn-group>.btnL{
-    border-right: 1px solid #FFFFFF;
-    background: #9C31DF;
+    /*border-right: 1px solid #ffffff;*/
+    background: #9c31df75;
     border-radius: 10px 0 0 10px;
 }
 
@@ -161,9 +183,6 @@ header .category li a:hover {
 }
 
 
-
-
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     html{
@@ -171,10 +190,11 @@ header .category li a:hover {
     }
 }
 
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     html{
-        font-size: 11px;
+        font-size: 12px;
     }
 
     header .mainNav .btnNav>button, header .mainNav .btnNav>.btn-group {
@@ -184,17 +204,24 @@ header .category li a:hover {
 
 }
 
+/* (Mobile & tablet devices, max width 992px) */
+@media (max-width: 992px) {
+    header .mainNav .btnNav>.btn-group>button{
+        padding: 0.2rem 0 0.25rem 0;
+    }
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     html{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     html{
-        font-size: 14px;
+        font-size: 16px;
     }
 
 }
@@ -202,7 +229,7 @@ header .category li a:hover {
 /* UHD devices (UHD desktops, 1400px and up) */
 @media (min-width: 1500px) {
     html{
-        font-size: 17px;
+        font-size: 18px;
     }
 
     header .mainNav a, header .mainNav .btnNav button {
@@ -217,3 +244,4 @@ header .category li a:hover {
     }
 
 }
+
