@@ -67,44 +67,114 @@ body {
 }
 
 a {
-    text-decoration: none;
-    /*font: 12px IRANYekan, sans-serif;*/
+    text-decoration: none !important;
 }
 
 /* Header */
 
-header{
+#banner{
+    position: relative;
     background: url(../image/Banner/Banner.png) no-repeat;
     background-size: 100% auto;
     height: 500px;
 }
+#banner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+    top: 0;
+    background: linear-gradient(-225deg, rgba(74, 61, 184, 0.6) 48%, rgba(50, 228, 179, 0.6) 100%);
+}
+
+.bannerContent{
+    position: relative;
+    z-index: 10;
+    top: 70px;
+    bottom: 70px;
+}
+
+header .topNav span, .telIcon  {
+    color: #070510;
+    font-size: 0.8rem;
+}
+header .topNav span:hover, header .topNav a:hover, .telIcon:hover  {
+    font-size: 0.92rem;
+    color: #FF6161;
+    text-shadow: 0 0 15px #FF6161;
+    transition: 0.5s;
+}
+
+header .topNav i, .telIcon i {
+    color: #ED5151;
+    font-size: 0.9rem;
+    vertical-align: initial;
+}
+
+header .topNav .btnNav .btnLogin {
+    background-color: #ED5151;
+}
+header .topNav .btnNav>button {
+    transition:all 1s;
+    background: #9c31df75;
+    border: 1px solid #ffffffcc;
+}
+header .topNav .btnNav>button:hover {
+    transition:all 0.5s;
+    background: #ED5151;
+    border: 2px solid #ffc5fc;
+}
 
 header .mainNav{
-    background: linear-gradient(180deg, rgba(23, 52, 216, 0.7) 0%, rgba(99, 120, 241, 0.028) 100%);
+    background: #22337d;
     color: white;
 }
 
 header .mainNav .navbar-brand>img {
     width: 9rem;
 }
+header .mainNav .searchBox{
+    background-color: #FF6161;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 4px 2px 4px;
+    border-radius: 20px;
+}
+header .mainNav .searchInput{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    width: 4.4rem;
+    color: white;
+}
+header .mainNav .searchInput::placeholder {
+    color: white;
+    text-indent: 10px;
+    text-align: center;
+}
 
-header .mainNav .navMenu>ul {
+header ul, #banner ul {
     display: flex;
     list-style-type: none;
     padding: 0;
     overflow: hidden;
     justify-content: center;
 }
-header .mainNav .navMenu>ul>li {
+header .mainNav ul>li, #banner .category ul>li {
     float: right;
     padding: 5px;
 }
 
-header .mainNav a, header .mainNav .btnNav button {
-    color: white;
+header .mainNav a, header .topNav .btnNav button {
+    color: #ffffffcc;
     font-size: 0.8rem;
     font-family: "IRANYekan ExtraBold";
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 header .mainNav ul>li>a:hover {
@@ -118,59 +188,11 @@ header .mainNav .navbarNav {
     margin-top: 0.5rem;
 }
 
-header .mainNav .btnNav>button, header .mainNav .btnNav>.btn-group {
-    color: white;
-    width: 10rem;
-    height: 2.1rem;
-    border: 1px solid #ffffff96;
-    box-sizing: border-box;
-    border-radius: 10px;
+#banner .dataBox {
+    background: rgba(255, 255, 255, 0.75);
 }
 
-header .mainNav .btnNav>button {
-    /*background: rgba(237, 81, 81, 0.8);*/
-    transition: 1s;
-    background:linear-gradient(90deg, rgb(51, 31, 200) 0%, rgb(۲۲۲, ۱۰۲, ۱۰۲) 80%);
-}
-header .mainNav .btnNav>button:hover {
-    transition: 1s;
-    background: rgba(200, 01, 81, 0.8);
-    /*background:linear-gradient(90deg, rgb(255, 97, 97) 0%, rgb(51, 31, 200) 80%);*/
-}
-
-header .mainNav .btnNav>.btn-group>.btnR{
-    /*border-left: 1px solid #FFFFFF;*/
-    background: #3162df63;
-    border-radius: 0 10px 10px 0;
-}
-header .mainNav .btnNav>.btn-group>.btnL{
-    /*border-right: 1px solid #ffffff;*/
-    background: #9c31df75;
-    border-radius: 10px 0 0 10px;
-}
-
-header .category {
-    background-color: #fdeaea;
-}
-
-header .category>form {
-
-}
-
-header .category ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    justify-content: center;
-}
-
-header .category li {
-    float: right;
-    padding: 5px;
-}
-
-header .category li a {
+#banner .category li a {
     display: block;
     color: black;
     text-align: center;
@@ -178,7 +200,7 @@ header .category li a {
     text-decoration: none;
 }
 
-header .category li a:hover {
+#banner .category li a:hover {
     background-color: #111111;
 }
 
@@ -197,18 +219,11 @@ header .category li a:hover {
         font-size: 12px;
     }
 
-    header .mainNav .btnNav>button, header .mainNav .btnNav>.btn-group {
-        /*width: 180px;*/
-        /*height: 45px;*/
-    }
-
 }
 
 /* (Mobile & tablet devices, max width 992px) */
 @media (max-width: 992px) {
-    header .mainNav .btnNav>.btn-group>button{
-        padding: 0.2rem 0 0.25rem 0;
-    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -231,17 +246,5 @@ header .category li a:hover {
     html{
         font-size: 18px;
     }
-
-    header .mainNav a, header .mainNav .btnNav button {
-        /*font-size: 20px;*/
-    }
-    header .mainNav ul>li>a:hover {
-        /*font-size: 21px;*/
-    }
-    header .mainNav .btnNav>button, header .mainNav .btnNav>.btn-group {
-        /*width: 272px;*/
-        /*height: 60px;*/
-    }
-
 }
 

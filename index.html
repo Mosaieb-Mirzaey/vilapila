@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-animate.css">
 
 
 </head>
@@ -21,7 +20,54 @@
 <body>
 <!-- header -->
 <header class="" id="header">
-    <nav class="mainNav pt-3 d-flex mb-md-5">
+    <nav class="topNav d-flex bg-white">
+        <a class="telIcon my-2 mr-5" href="#"><i class="fa fa-phone-square ml-1"> --- </i>تماس</a>
+        <div class="d-flex btnNav mr-auto ml-5">
+            <ul class="custom my-2">
+                <li class="ml-3">
+                    <a class="text-dark" href="#">
+                        <i class="fa fa-user ml-1"></i>
+                        <span>ثبت نام</span>
+                    </a>
+                </li>
+                <li class="ml-3">
+                    <a class="text-dark" href="#">
+                        <i class="fa fa-sign-in ml-1"></i>
+                        <span>ورود</span>
+                    </a>
+                </li>
+                <li class="dropdown ml-3">
+                    <a class="text-dark" data-toggle="dropdown" href="#">
+                        <i class="fa fa-address-card-o ml-1"></i><span> میز کار من</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">
+                            <i class="dropdown-icon icon icon-user"></i> My Profile
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="dropdown-icon icon icon-speech"></i> Inbox
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="dropdown-icon icon icon-bell"></i> Notifications
+                        </a>
+                        <a class="dropdown-item" href="mydash.html">
+                            <i class="dropdown-icon  icon icon-settings"></i> Account Settings
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="dropdown-icon icon icon-power"></i> Log out
+                        </a>
+                    </div>
+                </li>
+                <li class="ml-3">
+                    <a class="text-dark" href="#">
+                        <i class="fa fa-home ml-1"></i>
+                        <span>ثبت رایگان اقامتگاه</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mainNav  pt-2 d-flex">
         <button class="navbar-toggler d-md-none" type="button">
             <span class="fa fa-bars text-white"></span>
         </button>
@@ -39,56 +85,20 @@
                 <li class=" mr-md-2 mr-lg-5">
                     <a class="nav-link" href="#">بوم گردی و خانه سنتی</a>
                 </li>
+                <li class=" mr-md-2 mr-lg-5">
+                    <a class="nav-link" href="#">بلاگ</a>
+                </li>
+                <li class=" mr-md-2 mr-lg-5">
+                    <a class="nav-link" href="#">تماس با ما</a>
+                </li>
+                <li class=" mr-md-2 mr-lg-5">
+                    <form class="searchBox py-2">
+                        <input class="searchInput" type="text" placeholder="نام شهر" aria-label="Search">
+                        <a class="pl-2" type="submit"><i class="fa fa-search"></i></a>
+                    </form>
+                </li>
             </ul>
         </div>
-        <div class="btnNav mr-auto mt-md-3 ml-3">
-            <button type="button" class="btn ml-2">ثبت رایگان اقامتگاه</button>
-            <div class="btn-group mr-2" role="group" aria-label="Basic example">
-                <button type="button" class="btn w-50 btnR">ثبت نام</button>
-                <button type="button" class="btn w-50 btnL">ورود</button>
-            </div>
-
-                <div class="btn-animate btn-group mr-2" role="group" aria-label="Basic example">
-                    <svg>
-                        <defs>
-                            <linearGradient id="grad1">
-                                <stop offset="0%" stop-color="#FF8282"/>
-                                <stop offset="100%" stop-color="#E178ED" />
-                            </linearGradient>
-                        </defs>
-                        <rect class="btn-svg" rx="10" fill="none" stroke="url(#grad1)" ></rect>
-                    </svg>
-                    <button type="button" class="btn w-50 btnR">ثبت نام</button>
-                    <button type="button" class="btn w-50 btnL">ورود</button>
-                </div>
-        </div>
-
-    </nav>
-    <div class="category pt-2" id="navbar2">
-        <form class="d-flex justify-content-center mx-auto my-lg-0">
-            <input class="searchInput mr-sm-2" type="text" placeholder="جستجو در عاموتویز" aria-label="Search">
-            <button class="my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        <ul class="mx-auto mt-2 mt-lg-0">
-            <li class=" active">
-                <a class="" href="#">اسباب بازی<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="">
-                <a class="" href="#">عروسک</a>
-            </li>
-            <li class="">
-                <a class="disabled" href="#">سیسمونی</a>
-            </li>
-            <li class="">
-                <a class="disabled" href="#">تولد</a>
-            </li>
-            <li class="">
-                <a class="disabled" href="#">لوازم تحریر</a>
-            </li>
-            <li class="">
-                <a class="disabled" href="#">لوازم تحریر</a>
-            </li>
-        </ul>
     </div>
 </header>
 
@@ -96,10 +106,75 @@
 
 <!--Banner-->
 <section Id="banner">
-    <div class="container">
-        <div class="row">
-
+    <div class="bannerContent container">
+        <div class="title text-white text-center pb-2">
+           <h3 class="mb-3">اجاره و رزرو ویلا، سوئیت، خانه سنتی در سراسر ایران</h3>
+           <h6 class="mb-5">رزرو هتل، رزرو هتل آپارتمان و خرید اینترنتی بلیط هواپیما و بلیط اتوبوس با بهترین قیمت در همه شهرهای ایران</h6>
         </div>
+        <div class="dataBox pt-2 mx-auto" id="navbar2">
+            <div class="search-background bg-transparent" data-select2-id="37">
+                <div class="form row no-gutters " data-select2-id="36">
+                        <div class="form-group col-xl-4 col-lg-3 col-md-12 mb-0 bg-white ">
+                            <input type="text" class="form-control" id="text4" placeholder="قصد سفر به کدام شهر را دارید؟">
+                            <span><i class="fa fa-map-marker location-gps mr-1"></i></span>
+                        </div>
+                        <div class="form-group col-xl-2 col-lg-2 col-md-12 select2-lg  mb-0 bg-white" data-select2-id="35">
+                            <select class="form-control border-bottom-0" data-placeholder="تاریخ ورود" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                <optgroup label="Categories" data-select2-id="13">
+                                    <option data-select2-id="3">تاریخ ورود</option>
+                                    <option value="1" data-select2-id="14">Deluxe Houses</option>
+                                    <option value="2" data-select2-id="15">Modren Flats</option>
+                                    <option value="3" data-select2-id="16">Apartments</option>
+                                    <option value="4" data-select2-id="17">Stylish Houses</option>
+                                    <option value="5" data-select2-id="18">Offices Houses</option>
+                                    <option value="6" data-select2-id="19">Luxury Houses</option>
+                                    <option value="7" data-select2-id="20">Nature Houses</option>
+                                </optgroup>
+                            </select>
+                            <span class="select2 select2-container select2-container--default select2-container--above" dir="rtl" data-select2-id="21" style="width: 100%;">
+                                <span class="selection">
+                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-f011-container">
+                                        <span class="select2-selection__rendered" id="select2-f011-container" role="textbox" aria-readonly="true" title="Property Type">
+                                            تاریخ ورود
+                                        </span>
+                                        <span class="select2-selection__arrow" role="presentation">
+                                            <b role="presentation"></b>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                            </span>
+                        </div>
+                        <div class="form-group col-xl-2 col-lg-2 col-md-12 select2-lg  mb-0 bg-white" data-select2-id="43">
+                            <select class="form-control select2-show-search border-bottom-0 select2-hidden-accessible" data-placeholder="Min Value" data-select2-id="4" tabindex="-1" aria-hidden="true">
+                                <option value="1" selected="" data-select2-id="6">تاریخ خروج</option>
+                                <option value="2" data-select2-id="22">$50</option>
+                                <option value="3" data-select2-id="23">$60</option>
+                                <option value="4" data-select2-id="24">$70</option>
+                                <option value="5" data-select2-id="25">$80</option>
+                                <option value="5" data-select2-id="26">$90</option>
+                            </select>
+                            <span class="select2 select2-container select2-container--default select2-container--above" dir="rtl" data-select2-id="27" style="width: 100%;">
+                                <span class="selection">
+                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-rjzy-container">
+                                        <span class="select2-selection__rendered" id="select2-rjzy-container" role="textbox" aria-readonly="true" title="Min Price">
+                                            تاریخ خروج
+                                        </span>
+                                        <span class="select2-selection__arrow" role="presentation">
+                                            <b role="presentation"></b>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                            </span>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-12 mb-0">
+                            <a href="#" class="btn btn-block btn-danger br-tr-md-0 br-br-md-0">
+                                جستوجوی اقامتگاه
+                            </a>
+                        </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -322,7 +397,6 @@
 <script src="js/isotope.pkgd.min.js "></script>
 <script src="js/wow.min.js "></script>
 <script src="js/scripts.js "></script>
-<script src="js/scripts-animate.js"></script>
 
 
 </body>
