@@ -69,6 +69,14 @@ body {
 a {
     text-decoration: none !important;
 }
+input,table {
+    font-family: IRANYekan;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
 
 /* Header */
 
@@ -203,6 +211,17 @@ header .mainNav .navbarNav {
 #banner .category li a:hover {
     background-color: #111111;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Small devices (landscape phones, 576px and up) */

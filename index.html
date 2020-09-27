@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mosaieb Mirzaey">
     <title>Toy City</title>
+
+
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -13,7 +16,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/jquery.md.bootstrap.datetimepicker.style.css">
 
 </head>
 
@@ -111,64 +114,31 @@
            <h3 class="mb-3">اجاره و رزرو ویلا، سوئیت، خانه سنتی در سراسر ایران</h3>
            <h6 class="mb-5">رزرو هتل، رزرو هتل آپارتمان و خرید اینترنتی بلیط هواپیما و بلیط اتوبوس با بهترین قیمت در همه شهرهای ایران</h6>
         </div>
-        <div class="dataBox pt-2 mx-auto" id="navbar2">
-            <div class="search-background bg-transparent" data-select2-id="37">
-                <div class="form row no-gutters " data-select2-id="36">
-                        <div class="form-group col-xl-4 col-lg-3 col-md-12 mb-0 bg-white ">
-                            <input type="text" class="form-control" id="text4" placeholder="قصد سفر به کدام شهر را دارید؟">
+        <div class="dataBox pt-2 mx-auto">
+            <div class="search-background bg-transparent">
+                <div class="form row no-gutters ">
+                    <div class="form-group col-xl-4 col-lg-3 col-md-12 mb-0 bg-white ">
+                            <input type="text" class="form-control" placeholder="قصد سفر به کدام شهر را دارید؟">
                             <span><i class="fa fa-map-marker location-gps mr-1"></i></span>
-                        </div>
-                        <div class="form-group col-xl-2 col-lg-2 col-md-12 select2-lg  mb-0 bg-white" data-select2-id="35">
-                            <select class="form-control border-bottom-0" data-placeholder="تاریخ ورود" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                <optgroup label="Categories" data-select2-id="13">
-                                    <option data-select2-id="3">تاریخ ورود</option>
-                                    <option value="1" data-select2-id="14">Deluxe Houses</option>
-                                    <option value="2" data-select2-id="15">Modren Flats</option>
-                                    <option value="3" data-select2-id="16">Apartments</option>
-                                    <option value="4" data-select2-id="17">Stylish Houses</option>
-                                    <option value="5" data-select2-id="18">Offices Houses</option>
-                                    <option value="6" data-select2-id="19">Luxury Houses</option>
-                                    <option value="7" data-select2-id="20">Nature Houses</option>
-                                </optgroup>
-                            </select>
-                            <span class="select2 select2-container select2-container--default select2-container--above" dir="rtl" data-select2-id="21" style="width: 100%;">
-                                <span class="selection">
-                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-f011-container">
-                                        <span class="select2-selection__rendered" id="select2-f011-container" role="textbox" aria-readonly="true" title="Property Type">
-                                            تاریخ ورود
-                                        </span>
-                                        <span class="select2-selection__arrow" role="presentation">
-                                            <b role="presentation"></b>
-                                        </span>
-                                    </span>
-                                </span>
-                                <span class="dropdown-wrapper" aria-hidden="true"></span>
-                            </span>
-                        </div>
-                        <div class="form-group col-xl-2 col-lg-2 col-md-12 select2-lg  mb-0 bg-white" data-select2-id="43">
-                            <select class="form-control select2-show-search border-bottom-0 select2-hidden-accessible" data-placeholder="Min Value" data-select2-id="4" tabindex="-1" aria-hidden="true">
-                                <option value="1" selected="" data-select2-id="6">تاریخ خروج</option>
-                                <option value="2" data-select2-id="22">$50</option>
-                                <option value="3" data-select2-id="23">$60</option>
-                                <option value="4" data-select2-id="24">$70</option>
-                                <option value="5" data-select2-id="25">$80</option>
-                                <option value="5" data-select2-id="26">$90</option>
-                            </select>
-                            <span class="select2 select2-container select2-container--default select2-container--above" dir="rtl" data-select2-id="27" style="width: 100%;">
-                                <span class="selection">
-                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-rjzy-container">
-                                        <span class="select2-selection__rendered" id="select2-rjzy-container" role="textbox" aria-readonly="true" title="Min Price">
-                                            تاریخ خروج
-                                        </span>
-                                        <span class="select2-selection__arrow" role="presentation">
-                                            <b role="presentation"></b>
-                                        </span>
-                                    </span>
-                                </span>
-                                <span class="dropdown-wrapper" aria-hidden="true"></span>
-                            </span>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-12 mb-0">
+                    </div>
+                    <div id="input-arrival-time" class="form-group col-xl-2 col-lg-2 col-md-12  mb-0 bg-white">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <i class="input-group-text cursor-pointer fa fa-calendar-plus-o" ></i>
+                                </div>
+                                <input id="arrival-time" type="text" class="form-control" placeholder="رزرو از تاریخ" aria-label="arrival-time">
+                            </div>
+                    </div>
+                    <div id="input-departure-time" class="form-group col-xl-2 col-lg-2 col-md-12 select2-lg mb-0 bg-white">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <i class="input-group-text cursor-pointer fa fa-calendar-minus-o"></i>
+                                </div>
+                                <input type="text" id="departure-time" class="form-control" placeholder="تاریخ خروج" aria-label="departure-time">
+                            </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-12 mb-0">
                             <a href="#" class="btn btn-block btn-danger br-tr-md-0 br-br-md-0">
                                 جستوجوی اقامتگاه
                             </a>
@@ -183,9 +153,28 @@
 <!--Step-1-->
 <section class="step">
     <div class="container">
-        <div class="row">
-
-        </div>
+            <div class="row">
+<!--                <div class="col-sm-6">-->
+<!--                    <pre></pre>-->
+<!--                    <div class="input-group">-->
+<!--                        <div class="input-group-prepend">-->
+<!--                            <span class="input-group-text cursor-pointer" id="arrival-time">Icon</span>-->
+<!--                        </div>-->
+<!--                        <input type="text" id="input-arrival-time" class="form-control" placeholder="رزرو از تاریخ"-->
+<!--                               aria-label="Arrival-time" aria-describedby="Arrival-time">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-sm-6">-->
+<!--                    <pre></pre>-->
+<!--                    <div class="input-group">-->
+<!--                        <div class="input-group-prepend">-->
+<!--                            <span class="input-group-text cursor-pointer" id="departure-time">Icon</span>-->
+<!--                        </div>-->
+<!--                        <input type="text" id="input-departure-time" class="form-control" placeholder="تاریخ خروج"-->
+<!--                               aria-label="departure-time" aria-describedby="departure-time">-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
     </div>
 </section>
 
@@ -387,15 +376,15 @@
     </div>
 </footer>
 
-
-<script src="js/jquery-3.3.1.min.js "></script>
-<script src="js/popper.min.js "></script>
-<script src="js/bootstrap.min.js "></script>
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.md.bootstrap.datetimepicker.js" type="text/javascript"></script>
 <script src="js/owl.carousel.min.js "></script>
-<script src="js/lightbox.min.js "></script>
-<script src="js/smooth-scroll.min.js "></script>
-<script src="js/isotope.pkgd.min.js "></script>
-<script src="js/wow.min.js "></script>
+<!--<script src="js/lightbox.min.js "></script>-->
+<!--<script src="js/smooth-scroll.min.js "></script>-->
+<!--<script src="js/isotope.pkgd.min.js "></script>-->
+<!--<script src="js/wow.min.js "></script>-->
 <script src="js/scripts.js "></script>
 
 
