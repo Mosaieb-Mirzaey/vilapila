@@ -1,31 +1,104 @@
 
 // *** Persian Calendar ***
 
-
-$('#input-arrival-time').MdPersianDateTimePicker({
-    targetTextSelector: '#arrival-time',
-    fromDate: true,
-    enableTimePicker: true,
-    groupId: 'rangeSelector1',
-    dateFormat: 'yyyy/MM/dd',
-    textFormat: 'yyyy/MM/dd',
-});
-$('#input-departure-time').MdPersianDateTimePicker({
-    targetTextSelector: '#departure-time',
-    toDate: true,
-    groupId: 'rangeSelector1',
-    placement: 'top',
-    enableTimePicker: true,
-    dateFormat: 'yyyy/MM/dd',
-    textFormat: " dddd dd MMMM yyyy ",
-    isGregorian: false,
-    modalMode: false,
-    englishNumber: false
+$('#input-arrival-time,#input-departure-time').each(function(){
+    $(this).persianDatepicker({
+        autoClose: true,
+        "inline": false,
+        "format": "LL",
+        "viewMode": "day",
+        "initialValue": true,
+        "minDate": 1601264959074,
+        "maxDate": 1651964959074,
+        "position": "auto",
+        "altFormat": "ll",
+        "altField": "#departure-time",
 
 
-});
 
 
-$('#textbox').MdPersianDateTimePicker('setDatePersian', {
-    year: 1397, month: 1, day: 1, hour: 0, minute: 0, second: 0
-});
+        "onlyTimePicker": false,
+        "onlySelectOnDate": true,
+        "calendarType": "persian",
+        "inputDelay": 800,
+        "observer": false,
+        "calendar": {
+            "persian": {
+                "locale": "fa",
+                "showHint": true,
+                "leapYearMode": "algorithmic"
+            },
+            "gregorian": {
+                "locale": "en",
+                "showHint": true
+            }
+        },
+        "navigator": {
+            "enabled": true,
+            "scroll": {
+                "enabled": true
+            },
+            "text": {
+                "btnNextText": "<",
+                "btnPrevText": ">"
+            }
+        },
+        "toolbox": {
+            "enabled": true,
+            "calendarSwitch": {
+                "enabled": true,
+                "format": "MMMM"
+            },
+            "todayButton": {
+                "enabled": true,
+                "text": {
+                    "fa": "امروز",
+                    "en": "Today"
+                }
+            },
+            "submitButton": {
+                "enabled": true,
+                "text": {
+                    "fa": "تایید",
+                    "en": "Submit"
+                }
+            },
+            "text": {
+                "btnToday": "امروز"
+            }
+        },
+        "timePicker": {
+            "enabled": true,
+            "step": 1,
+            "hour": {
+                "enabled": false,
+                "step": null
+            },
+            "minute": {
+                "enabled": false,
+                "step": null
+            },
+            "second": {
+                "enabled": false,
+                "step": null
+            },
+            "meridian": {
+                "enabled": false
+            }
+        },
+        "dayPicker": {
+            "enabled": true,
+            "titleFormat": "YYYY MMMM"
+        },
+        "monthPicker": {
+            "enabled": true,
+            "titleFormat": "YYYY"
+        },
+        "yearPicker": {
+            "enabled": true,
+            "titleFormat": "YYYY"
+        },
+        "responsive": true
+
+    });
+})
