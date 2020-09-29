@@ -52,10 +52,7 @@
     src: url(../fonts/IRANYekan/IRANYekanBlack.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'iranyekanwebbold';
-    src: url(../fonts/IRANYekan/iranyekanwebbold.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: bold;
-}
+
 
 
 
@@ -82,332 +79,173 @@ input,table {
 
 
 /* Header */
-@media {
-    header .topNav span, .telIcon  {
-        color: #070510;
-        font-size: 0.8rem;
-    }
-    header .topNav span:hover, header .topNav a:hover, .telIcon:hover  {
-        font-size: 0.92rem;
-        color: #FF6161;
-        text-shadow: 0 0 15px #FF6161;
-        transition: 0.5s;
-    }
 
-    header .topNav i, .telIcon i {
-        color: #ED5151;
-        font-size: 0.9rem;
-        vertical-align: initial;
-    }
-
-    header .topNav .btnNav .btnLogin {
-        background-color: #ED5151;
-    }
-    header .topNav .btnNav>button {
-        transition:all 1s;
-        background: #9c31df75;
-        border: 1px solid #ffffffcc;
-    }
-    header .topNav .btnNav>button:hover {
-        transition:all 0.5s;
-        background: #ED5151;
-        border: 2px solid #ffc5fc;
-    }
-
-    header .mainNav{
-        background: #22337d;
-        color: white;
-    }
-
-    header .mainNav .navbar-brand>img {
-        width: 9rem;
-    }
-    header .mainNav .searchBox{
-        background-color: #FF6161;
-        color: white;
-        font-size: 0.8rem;
-        padding: 0 4px 0 4px;
-        border-radius: 2px;
-    }
-    header .mainNav .searchInput{
-        background-color: transparent;
-        outline: none;
-        border:none;
-        width: 9rem;
-        color: white;
-        text-indent: 30px;
-    }
-
-    header .mainNav .searchInput::placeholder {
-        color: white;
-        text-indent: 30px;
-        text-align: right;
-    }
-
-    header ul, #banner ul {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-        overflow: hidden;
-        justify-content: center;
-    }
-    header .mainNav ul>li, #banner .category ul>li {
-        float: right;
-        padding: 5px;
-    }
-
-    header .mainNav a, header .topNav .btnNav button {
-        color: #ffffffcc;
-        font-size: 0.8rem;
-        font-family: "IRANYekan ExtraBold";
-        transition: 0.5s;
-        border-radius: 5px;
-    }
-
-    header .mainNav ul>li>a:hover {
-        font-size: 0.92rem;
-        color: #FF6161;
-        text-shadow: 0 0 15px #FF6161;
-        transition: 0.5s;
-    }
-
-    header .mainNav .navbarNav {
-        margin-top: 0.5rem;
-    }
+#banner{
+    position: relative;
+    background: url(../image/Banner/Banner.png) no-repeat;
+    background-size: 100% auto;
+    height: 500px;
+}
+#banner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+    top: 0;
+    background: linear-gradient(-225deg, rgba(74, 61, 184, 0.6) 48%, rgba(50, 228, 179, 0.6) 100%);
 }
 
+.bannerContent{
+    position: relative;
+    z-index: 10;
+    top: 10rem;
+    bottom: 70px;
+}
 
-/* Banner */
-@media {
-    #banner{
-        position: relative;
-        background: url(../image/Banner/Banner.png) no-repeat;
-        background-size: 100% auto;
-        height: 500px;
-    }
-    #banner:before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        right: 0;
-        display: block;
-        z-index: 0;
-        top: 0;
-        background: linear-gradient(-225deg, rgba(74, 61, 184, 0.6) 48%, rgba(50, 228, 179, 0.6) 100%);
-    }
+header .topNav span, .telIcon  {
+    color: #070510;
+    font-size: 0.8rem;
+}
+header .topNav span:hover, header .topNav a:hover, .telIcon:hover  {
+    font-size: 0.92rem;
+    color: #FF6161;
+    text-shadow: 0 0 15px #FF6161;
+    transition: 0.5s;
+}
 
-    .bannerContent{
-        position: relative;
-        z-index: 10;
-        top: 10rem;
-        bottom: 70px;
-    }
+header .topNav i, .telIcon i {
+    color: #ED5151;
+    font-size: 0.9rem;
+    vertical-align: initial;
+}
 
-    #banner .dataBox {
-        background: rgba(255, 255, 255, 0.75);
-    }
+header .topNav .btnNav .btnLogin {
+    background-color: #ED5151;
+}
+header .topNav .btnNav>button {
+    transition:all 1s;
+    background: #9c31df75;
+    border: 1px solid #ffffffcc;
+}
+header .topNav .btnNav>button:hover {
+    transition:all 0.5s;
+    background: #ED5151;
+    border: 2px solid #ffc5fc;
+}
 
-    #banner .dataBox .input-group-text, #banner .dataBox .form-control,
-    #banner .dataBox .btn-block{
-        border-radius: 0;
-        border: 3px solid white;
-    }
+header .mainNav{
+    background: #22337d;
+    color: white;
+}
 
-    #banner .dataBox input::placeholder {
-        font-size: 0.8rem;
-    }
+header .mainNav .navbar-brand>img {
+    width: 9rem;
+}
+header .mainNav .searchBox{
+    background-color: #FF6161;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 4px 2px 4px;
+    border-radius: 20px;
+}
+header .mainNav .searchInput{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    width: 9rem;
+    color: white;
+    text-indent: 30px;
+}
 
-    #banner .category li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 3px;
-        text-decoration: none;
-    }
+header .mainNav .searchInput::placeholder {
+    color: white;
+    text-indent: 30px;
+    text-align: right;
+}
 
-    #banner .category li a:hover {
-        background-color: #111111;
-    }
+header ul, #banner ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+}
+header .mainNav ul>li, #banner .category ul>li {
+    float: right;
+    padding: 5px;
+}
+
+header .mainNav a, header .topNav .btnNav button {
+    color: #ffffffcc;
+    font-size: 0.8rem;
+    font-family: "IRANYekan ExtraBold";
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+header .mainNav ul>li>a:hover {
+    font-size: 0.92rem;
+    color: #FF6161;
+    text-shadow: 0 0 15px #FF6161;
+    transition: 0.5s;
+}
+
+header .mainNav .navbarNav {
+    margin-top: 0.5rem;
+}
+
+#banner .dataBox {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+#banner .dataBox input::placeholder {
+    font-size: 0.8rem;
+}
+
+#banner .category li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+}
+
+#banner .category li a:hover {
+    background-color: #111111;
 }
 
 
 /* Counter Top */
-@media {
-    #counterTop{
-        margin-top: -3rem;
-    }
-    #counterTop .card-body span {
-        font-family: "iranyekanwebbold";
-        font-size: 1.3rem;
-        font-weight: 600;
-    }
-
-    #counterTop .counterIcon{
-        display: inline-block;
-        width: 3rem;
-        height: 3rem;
-    }
-    #counterTop div[class*="iconCover"]{
-        font-size: 0.8rem;
-        font-family: "IRANYekan ExtraBold";
-        border-radius: 10px;
-        padding: 0.5rem;
-        width: 4rem;
-        height: 4rem;
-    }
-    #counterTop .iconCover1{
-        background-color: #ffa22b26;
-    }
-    #counterTop .iconCover2{
-        background-color: #ed51512e;
-    }
-    #counterTop .iconCover3{
-        background-color: #9c31df2e;
-    }
-
+#counterTop{
+    margin-top: -3rem;
+}
+#counterTop .counterIcon{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+#counterTop div[class*="iconCover"]{
+    font-size: 0.8rem;
+    font-family: "IRANYekan ExtraBold";
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+}
+#counterTop .iconCover1{
+    background-color: #ffa22b26;
+}
+#counterTop .iconCover2{
+    background-color: #ed51512e;
+}
+#counterTop .iconCover3{
+    background-color: #9c31df2e;
 }
 
-
-/* Step-1 */
-@media {
-    .step1{
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        box-shadow: -2px 24px 74px 4px rgba(0, 0, 0, 0.78);
-
-    }
-    #carousel-top .carousel-item {
-        height: 15rem;
-        background-size: cover;
-        min-height: 10rem;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    #carousel-top li {
-        height: 20px;
-        width: 20px;
-        opacity: 80%;
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    }
-
-    #carousel-top .carousel-overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding-top: 40px;
-    }
-
-    #carousel-top .carousel-content {
-        max-width: 400px;
-        color: white;
-        margin: 10% 0;
-        padding: 0 25px;
-    }
-
-    #carousel-top .carousel-title {
-        margin-bottom: 50px;
-        font-weight: 600;
-        font-size: 40px;
-        animation-duration: 1.5s;
-        animation-delay: 1s;
-        animation-iteration-count: revert;
-    }
-
-
-    #carousel-top .carousel-text {
-        margin-bottom: 50px;
-        font-weight: 300;
-        font-size: 12px;
-        animation-duration: 1.3s;
-        animation-delay: 1.6s;
-        animation-iteration-count: revert;
-    }
-
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-        position: absolute;
-        top: 65%;
-    }
-
-    .step1 .banner-1 {
-        background-image: url('../image/card/step1-1.png')
-    }
-    .step1 .banner-2 {
-        background-image: url('../image/card/step1-2.png')
-    }
-    .step1 .banner-3 {
-        background-image: url('../image/card/step1-3.png')
-    }
-}
-
-
-/* Step-2 */
-@media {
-    /* show 3 items */
-    .carousel-inner .active,
-    .carousel-inner .active + .carousel-item,
-    .carousel-inner .active + .carousel-item + .carousel-item {
-        display: block;
-    }
-
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-        transition: none;
-    }
-
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-
-    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -33.3333%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    /* left or forward direction */
-    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-    .carousel-item-next.carousel-item-left + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    /* farthest right hidden item must be abso position for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    /* right or prev direction */
-    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-    .carousel-item-prev.carousel-item-right + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-    }
-
-}
 
 
 
