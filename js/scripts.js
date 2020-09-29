@@ -1,5 +1,6 @@
 
-// *** Persian Calendar ***
+
+// ******* Persian Calendar *******
 $("#input-arrival-time").click(
     function () {
         $("#input-arrival-time").persianDatepicker({
@@ -97,10 +98,7 @@ $("#input-arrival-time").click(
             "responsive": true
 
         });
-    }
-    )
-
-
+    })
 $("#input-departure-time").click(
     function (){
         $("#input-departure-time").persianDatepicker({
@@ -198,5 +196,41 @@ $("#input-departure-time").click(
             "responsive": true
 
         })
-    }
-)
+    })
+
+
+
+// ******* Counter *******
+$('.counter').counterUp({
+    delay: 10,
+    time: 1500
+});
+
+
+// ******* Counter *******
+$(document).ready(function() {
+    $("#myCarousel").on("slide.bs.carousel", function(e) {
+        var $e = $(e.relatedTarget);
+        var idx = $e.index();
+        var itemsPerSlide = 3;
+        var totalItems = $(".carousel-item").length;
+
+        if (idx >= totalItems - (itemsPerSlide - 1)) {
+            var it = itemsPerSlide - (totalItems - idx);
+            for (var i = 0; i < it; i++) {
+                // append slides to end
+                if (e.direction == "left") {
+                    $(".carousel-item")
+                        .eq(i)
+                        .appendTo(".carousel-inner");
+                } else {
+                    $(".carousel-item")
+                        .eq(0)
+                        .appendTo($(this).find(".carousel-inner"));
+                }
+            }
+        }
+    });
+});
+
+
