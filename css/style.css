@@ -52,6 +52,15 @@
     src: url(../fonts/IRANYekan/IRANYekanBlack.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
+@font-face {font-family: 'iranyekanwebmedium';
+    src: url(../fonts/IRANYekan/iranyekanwebmedium.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'iranyekanwebbold';
+    src: url(../fonts/IRANYekan/iranyekanwebbold.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: bold;
+}
+
 
 
 
@@ -78,172 +87,382 @@ input,table {
 }
 
 
+
 /* Header */
+@media {
+    header .topNav span, .telIcon  {
+        color: #070510;
+        font-size: 0.8rem;
+    }
+    header .topNav span:hover, header .topNav a:hover, .telIcon:hover  {
+        font-size: 0.92rem;
+        color: #FF6161;
+        text-shadow: 0 0 15px #FF6161;
+        transition: 0.5s;
+    }
 
-#banner{
-    position: relative;
-    background: url(../image/Banner/Banner.png) no-repeat;
-    background-size: 100% auto;
-    height: 500px;
-}
-#banner:before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    display: block;
-    z-index: 0;
-    top: 0;
-    background: linear-gradient(-225deg, rgba(74, 61, 184, 0.6) 48%, rgba(50, 228, 179, 0.6) 100%);
-}
+    header .topNav i, .telIcon i {
+        color: #ED5151;
+        font-size: 0.9rem;
+        vertical-align: initial;
+    }
 
-.bannerContent{
-    position: relative;
-    z-index: 10;
-    top: 10rem;
-    bottom: 70px;
-}
+    header .topNav .btnNav .btnLogin {
+        background-color: #ED5151;
+    }
+    header .topNav .btnNav>button {
+        transition:all 1s;
+        background: #9c31df75;
+        border: 1px solid #ffffffcc;
+    }
+    header .topNav .btnNav>button:hover {
+        transition:all 0.5s;
+        background: #ED5151;
+        border: 2px solid #ffc5fc;
+    }
 
-header .topNav span, .telIcon  {
-    color: #070510;
-    font-size: 0.8rem;
-}
-header .topNav span:hover, header .topNav a:hover, .telIcon:hover  {
-    font-size: 0.92rem;
-    color: #FF6161;
-    text-shadow: 0 0 15px #FF6161;
-    transition: 0.5s;
-}
+    header .mainNav{
+        background: #22337d;
+        color: white;
+    }
 
-header .topNav i, .telIcon i {
-    color: #ED5151;
-    font-size: 0.9rem;
-    vertical-align: initial;
-}
+    header .mainNav .navbar-brand>img {
+        width: 9rem;
+    }
+    header .mainNav .searchBox{
+        background-color: #FF6161;
+        color: white;
+        font-size: 0.8rem;
+        padding: 2px 4px 2px 4px;
+        border-radius: 20px;
+    }
+    header .mainNav .searchInput{
+        background-color: transparent;
+        outline: none;
+        border:none;
+        width: 9rem;
+        color: white;
+        text-indent: 30px;
+    }
 
-header .topNav .btnNav .btnLogin {
-    background-color: #ED5151;
-}
-header .topNav .btnNav>button {
-    transition:all 1s;
-    background: #9c31df75;
-    border: 1px solid #ffffffcc;
-}
-header .topNav .btnNav>button:hover {
-    transition:all 0.5s;
-    background: #ED5151;
-    border: 2px solid #ffc5fc;
-}
+    header .mainNav .searchInput::placeholder {
+        color: white;
+        text-indent: 30px;
+        text-align: right;
+    }
 
-header .mainNav{
-    background: #22337d;
-    color: white;
-}
+    header ul, #banner ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        justify-content: center;
+    }
+    header .mainNav ul>li, #banner .category ul>li {
+        float: right;
+        padding: 5px;
+    }
 
-header .mainNav .navbar-brand>img {
-    width: 9rem;
-}
-header .mainNav .searchBox{
-    background-color: #FF6161;
-    color: white;
-    font-size: 0.8rem;
-    padding: 2px 4px 2px 4px;
-    border-radius: 20px;
-}
-header .mainNav .searchInput{
-    background-color: transparent;
-    outline: none;
-    border:none;
-    width: 9rem;
-    color: white;
-    text-indent: 30px;
-}
+    header .mainNav a, header .topNav .btnNav button {
+        color: #ffffffcc;
+        font-size: 0.8rem;
+        font-family: "IRANYekan ExtraBold";
+        transition: 0.5s;
+        border-radius: 5px;
+    }
 
-header .mainNav .searchInput::placeholder {
-    color: white;
-    text-indent: 30px;
-    text-align: right;
-}
+    header .mainNav ul>li>a:hover {
+        font-size: 0.92rem;
+        color: #FF6161;
+        text-shadow: 0 0 15px #FF6161;
+        transition: 0.5s;
+    }
 
-header ul, #banner ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    justify-content: center;
-}
-header .mainNav ul>li, #banner .category ul>li {
-    float: right;
-    padding: 5px;
+    header .mainNav .navbarNav {
+        margin-top: 0.5rem;
+    }
 }
 
-header .mainNav a, header .topNav .btnNav button {
-    color: #ffffffcc;
-    font-size: 0.8rem;
-    font-family: "IRANYekan ExtraBold";
-    transition: 0.5s;
-    border-radius: 5px;
-}
+/* Banner */
+@media {
+    #banner{
+        position: relative;
+        background: url(../image/Banner/Banner.png) no-repeat;
+        background-size: 100% auto;
+        height: 500px;
+    }
+    #banner:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 0;
+        top: 0;
+        background: linear-gradient(-225deg, rgba(74, 61, 184, 0.6) 48%, rgba(50, 228, 179, 0.6) 100%);
+    }
 
-header .mainNav ul>li>a:hover {
-    font-size: 0.92rem;
-    color: #FF6161;
-    text-shadow: 0 0 15px #FF6161;
-    transition: 0.5s;
-}
+    .bannerContent{
+        position: relative;
+        z-index: 10;
+        top: 10rem;
+        bottom: 70px;
+    }
 
-header .mainNav .navbarNav {
-    margin-top: 0.5rem;
-}
+    #banner .dataBox {
+        background: rgba(255, 255, 255, 0.75);
+    }
 
-#banner .dataBox {
-    background: rgba(255, 255, 255, 0.75);
-}
+    #banner .dataBox input::placeholder {
+        font-size: 0.8rem;
+    }
 
-#banner .dataBox input::placeholder {
-    font-size: 0.8rem;
-}
+    #banner .category li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 3px;
+        text-decoration: none;
+    }
 
-#banner .category li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 3px;
-    text-decoration: none;
-}
-
-#banner .category li a:hover {
-    background-color: #111111;
+    #banner .category li a:hover {
+        background-color: #111111;
+    }
 }
 
 
 /* Counter Top */
-#counterTop{
-    margin-top: -3rem;
+@media {
+    #counterTop{
+        margin-top: -3rem;
+    }
+    #counterTop .cardBoot{
+        padding: 1rem
+    }
+    #counterTop .counterIcon{
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+    }
+    #counterTop h3 {
+        font-family: iranyekanwebbold;
+    }
+    #counterTop div[class*="iconCover"]{
+        font-size: 0.8rem;
+        font-family: "IRANYekan ExtraBold";
+        border-radius: 10px;
+        padding: 0.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    #counterTop .iconCover1 {
+        background-color: #ffa22b26;
+    }
+    #counterTop .iconCover2{
+        background-color: #ed51512e;
+    }
+    #counterTop .iconCover3{
+        background-color: #9c31df2e;
+    }
 }
-#counterTop .counterIcon{
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-}
-#counterTop div[class*="iconCover"]{
-    font-size: 0.8rem;
-    font-family: "IRANYekan ExtraBold";
-    border-radius: 10px;
-    padding: 0.5rem;
-    width: 4rem;
-    height: 4rem;
-}
-#counterTop .iconCover1{
-    background-color: #ffa22b26;
-}
-#counterTop .iconCover2{
-    background-color: #ed51512e;
-}
-#counterTop .iconCover3{
-    background-color: #9c31df2e;
+
+
+
+/* Tectonic */
+@media {
+    .tectonic .title {
+        color: #545454;
+    }
+    .tectonic .card-wrapper {
+        direction: rtl;
+    }
+    .tectonic .card-wrapper h3 {
+        font-family: "IRANYekan ExtraBold";
+        font-size: 1rem;
+    }
+    .tectonic html, .tectonic body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .tectonic *, .tectonic *::before, .tectonic *::after {
+        box-sizing: border-box;
+    }
+    .tectonic .no-scroll {
+        overflow: hidden;
+    }
+    .tectonic .container {
+        background: #ffffff;
+        padding:0 2em 0 2em;
+        display: flex;
+    }
+    .tectonic .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+    }
+
+    .tectonic .center-image, .tectonic .card__background img {
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        object-fit: cover;
+    }
+    .tectonic .slick-slide {
+        /*width: 300px !important;*/
+        padding: 2em 0.5em;
+    }
+    .tectonic .card-slider {
+        margin: auto;
+        width: 100%;
+    }
+    .tectonic .card {
+        background: #161616;
+        display: flex;
+        padding: 2em;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        height: 11rem;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+    .tectonic .card > * {
+        transition: opacity 350ms;
+    }
+    .tectonic .card--opened > * {
+        opacity: 0;
+    }
+    .tectonic .card__background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        background: #2fd4dc;
+        z-index: -1;
+        text-align: left;
+    }
+    .tectonic .card__background::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 70%);
+    }
+    .tectonic .card__category {
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 5px;
+        background: #FF6161;
+        font-size: 0.8em;
+        font-weight: 600;
+        padding: 0.2em 0.5em 0.25em;
+    }
+    .tectonic .card__title {
+        text-transform: uppercase;
+        margin: 0.5em 0;
+        color: #2e5f80;
+    }
+    .tectonic .card__duration {
+        color: #6f7070;
+    }
+    .tectonic .modal-wrapper, .tectonic .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .tectonic .modal-wrapper {
+        display: flex;
+    }
+    .tectonic .overlay {
+        background: rgba(0, 0, 0, 0.5);
+        transition: opacity 150ms ease;
+    }
+    .tectonic .modal {
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+        width: 90vw;
+        height: 90vh;
+        max-width: 500px;
+        background: #fff;
+        border-radius: 20px;
+    }
+    .tectonic .modal__scroll-area {
+        height: inherit;
+        overflow: auto;
+        border-radius: inherit;
+        position: relative;
+        z-index: 1;
+    }
+    .tectonic .modal__close-button {
+        background: transparent;
+        border: none;
+        margin-bottom: auto;
+        color: #2e5f80;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2em;
+        z-index: 2;
+    }
+    .tectonic .modal__header {
+        text-align: center;
+        position: relative;
+        display: flex;
+        padding: 0.5em;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 300px;
+        z-index: 1;
+    }
+    .tectonic .modal__content {
+        padding: 2em;
+        color: #666;
+        line-height: 1.5;
+    }
+    .tectonic [data-modal-state="closed"] .modal-wrapper {
+        pointer-events: none;
+    }
+    .tectonic [data-modal-state="closed"] .overlay {
+        pointer-events: none;
+    }
+    .tectonic [data-modal-state="closed"] .modal {
+        opacity: 0;
+    }
+    .tectonic [data-modal-state="closed"] .overlay {
+        opacity: 0;
+    }
+    .tectonic [data-modal-state="opening"] .modal__header, .tectonic [data-modal-state="closing"] .modal__header, .tectonic [data-modal-state="opening"] .modal__content, .tectonic [data-modal-state="closing"] .modal__content, .tectonic [data-modal-state="opening"] .modal__close-button, .tectonic [data-modal-state="closing"] .modal__close-button {
+        opacity: 0;
+    }
+    .tectonic [data-modal-state="opening"] .overlay {
+        transition: opacity 500ms ease;
+    }
+    .tectonic [data-modal-state="closing"] .overlay {
+        opacity: 0;
+        transition: opacity 500ms ease;
+    }
+    .tectonic [data-modal-state="open"] .modal__header, .tectonic [data-modal-state="open"] .modal__content {
+        transition: opacity 450ms;
+    }
+
 }
 
 
