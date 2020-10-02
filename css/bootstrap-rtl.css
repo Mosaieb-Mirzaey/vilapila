@@ -4,9 +4,7 @@ body {
     direction: rtl;
     text-align: right;
 }
-.tectonic {
-    direction: ltr;
-}
+
 .list-unstyled {
     padding-left: initial !important;
     padding-right: 0;

@@ -1,65 +1,70 @@
 
 /*IRANSans Font*/
-@font-face {font-family: 'IRANSansRegular';
-    src: url(../fonts/iransans/IRANSans.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
+@media {
+    @font-face {font-family: 'IRANSansRegular';
+        src: url(../fonts/iransans/IRANSans.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_UltraLight';
+        src: url(../fonts/iransans/IRANSans_UltraLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_Light';
+        src: url(../fonts/iransans/IRANSans_Light.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_Medium';
+        src: url(../fonts/iransans/IRANSans_Medium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_Bold';
+        src: url(../fonts/iransans/IRANSans_Bold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
 }
-@font-face {font-family: 'IRANSans_UltraLight';
-    src: url(../fonts/iransans/IRANSans_UltraLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANSans_Light';
-    src: url(../fonts/iransans/IRANSans_Light.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANSans_Medium';
-    src: url(../fonts/iransans/IRANSans_Medium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANSans_Bold';
-    src: url(../fonts/iransans/IRANSans_Bold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
+
 
 
 /*IRAN Yekan Font*/
-@font-face {font-family: 'IRANYekanRegular';
-    src: url(../fonts/IRANYekan/IRANYekanRegular.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANYekanThin';
-    src: url(../fonts/IRANYekan/IRANYekanThin.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANYekanLight';
-    src: url(../fonts/IRANYekan/IRANYekanLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANYekanMedium';
-    src: url(../fonts/IRANYekan/IRANYekanMedium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANYekanBold';
-    src: url(../fonts/IRANYekan/IRANYekanBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
+@media {
+    @font-face {font-family: 'IRANYekanRegular';
+        src: url(../fonts/IRANYekan/IRANYekanRegular.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanThin';
+        src: url(../fonts/IRANYekan/IRANYekanThin.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanLight';
+        src: url(../fonts/IRANYekan/IRANYekanLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanMedium';
+        src: url(../fonts/IRANYekan/IRANYekanMedium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanBold';
+        src: url(../fonts/IRANYekan/IRANYekanBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanExtraBold';
+        src: url(../fonts/IRANYekan/IRANYekanExtraBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanBlack';
+        src: url(../fonts/IRANYekan/IRANYekanBlack.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'iranyekanwebmedium';
+        src: url(../fonts/IRANYekan/iranyekanwebmedium.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'iranyekanwebbold';
+        src: url(../fonts/IRANYekan/iranyekanwebbold.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: bold;
+    }
 }
 
-@font-face {font-family: 'IRANYekanExtraBold';
-    src: url(../fonts/IRANYekan/IRANYekanExtraBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANYekanBlack';
-    src: url(../fonts/IRANYekan/IRANYekanBlack.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'iranyekanwebmedium';
-    src: url(../fonts/IRANYekan/iranyekanwebmedium.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'iranyekanwebbold';
-    src: url(../fonts/IRANYekan/iranyekanwebbold.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: bold;
-}
 
 
 
@@ -71,15 +76,15 @@ html{
 }
 
 body {
-    background-color: white;
-    font-family: IRANYekan;
+    background-color: #F5F5F5;
+    font-family: IRANYekanRegular;
 }
 
 a {
     text-decoration: none !important;
 }
 input,table {
-    font-family: IRANYekan;
+    font-family: iranyekanwebmedium;
 }
 
 .cursor-pointer {
@@ -166,7 +171,7 @@ input,table {
     header .mainNav a, header .topNav .btnNav button {
         color: #ffffffcc;
         font-size: 0.8rem;
-        font-family: "IRANYekan ExtraBold";
+        font-family: "IRANYekanExtraBold";
         transition: 0.5s;
         border-radius: 5px;
     }
@@ -182,6 +187,7 @@ input,table {
         margin-top: 0.5rem;
     }
 }
+
 
 /* Banner */
 @media {
@@ -238,9 +244,6 @@ input,table {
     #counterTop{
         margin-top: -3rem;
     }
-    #counterTop .cardBoot{
-        padding: 1rem
-    }
     #counterTop .counterIcon{
         display: inline-block;
         width: 3rem;
@@ -251,7 +254,7 @@ input,table {
     }
     #counterTop div[class*="iconCover"]{
         font-size: 0.8rem;
-        font-family: "IRANYekan ExtraBold";
+        font-family: "IRANYekanExtraBold";
         border-radius: 10px;
         padding: 0.5rem;
         width: 4rem;
@@ -269,34 +272,36 @@ input,table {
 }
 
 
-
-/* Tectonic */
+/* Step-1 */
 @media {
-    .tectonic .title {
+    .step1{
+        direction: ltr;
+    }
+    .step1 .title {
         color: #545454;
     }
-    .tectonic .card-wrapper {
+    .step1 .card-wrapper {
         direction: rtl;
     }
-    .tectonic .card-wrapper h3 {
-        font-family: "IRANYekan ExtraBold";
+    .step1 .card-wrapper h3 {
+        font-family: "IRANYekanExtraBold";
         font-size: 1rem;
     }
-    .tectonic html, .tectonic body {
+    .step1 html, .step1 body {
         font-family: 'Poppins', sans-serif;
     }
-    .tectonic *, .tectonic *::before, .tectonic *::after {
+    .step1 *, .step1 *::before, .step1 *::after {
         box-sizing: border-box;
     }
-    .tectonic .no-scroll {
+    .step1 .no-scroll {
         overflow: hidden;
     }
-    .tectonic .container {
+    .step1 .container {
         background: #ffffff;
         padding:0 2em 0 2em;
         display: flex;
     }
-    .tectonic .icon {
+    .step1 .icon {
         display: inline-block;
         width: 1em;
         height: 1em;
@@ -305,7 +310,7 @@ input,table {
         fill: currentColor;
     }
 
-    .tectonic .center-image, .tectonic .card__background img {
+    .step1 .center-image, .step1 .card__background img {
         width: 100%;
         min-height: 100%;
         position: absolute;
@@ -313,15 +318,15 @@ input,table {
         transform: translateY(-50%);
         object-fit: cover;
     }
-    .tectonic .slick-slide {
+    .step1 .slick-slide {
         /*width: 300px !important;*/
         padding: 2em 0.5em;
     }
-    .tectonic .card-slider {
+    .step1 .card-slider {
         margin: auto;
         width: 100%;
     }
-    .tectonic .card {
+    .step1 .card {
         background: #161616;
         display: flex;
         padding: 2em;
@@ -335,13 +340,13 @@ input,table {
         height: 11rem;
         box-shadow: 0 28px 19px -23px #4c4c4c42;
     }
-    .tectonic .card > * {
+    .step1 .card > * {
         transition: opacity 350ms;
     }
-    .tectonic .card--opened > * {
+    .step1 .card--opened > * {
         opacity: 0;
     }
-    .tectonic .card__background {
+    .step1 .card__background {
         position: absolute;
         top: 0;
         right: 0;
@@ -352,7 +357,7 @@ input,table {
         z-index: -1;
         text-align: left;
     }
-    .tectonic .card__background::after {
+    .step1 .card__background::after {
         content: '';
         position: absolute;
         top: 0;
@@ -361,7 +366,7 @@ input,table {
         left: 0;
         background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 70%);
     }
-    .tectonic .card__category {
+    .step1 .card__category {
         text-transform: uppercase;
         color: #fff;
         border-radius: 5px;
@@ -370,15 +375,15 @@ input,table {
         font-weight: 600;
         padding: 0.2em 0.5em 0.25em;
     }
-    .tectonic .card__title {
+    .step1 .card__title {
         text-transform: uppercase;
         margin: 0.5em 0;
         color: #2e5f80;
     }
-    .tectonic .card__duration {
+    .step1 .card__duration {
         color: #6f7070;
     }
-    .tectonic .modal-wrapper, .tectonic .overlay {
+    .step1 .modal-wrapper, .step1 .overlay {
         position: fixed;
         top: 0;
         left: 0;
@@ -386,14 +391,14 @@ input,table {
         height: 100%;
         z-index: 1;
     }
-    .tectonic .modal-wrapper {
+    .step1 .modal-wrapper {
         display: flex;
     }
-    .tectonic .overlay {
+    .step1 .overlay {
         background: rgba(0, 0, 0, 0.5);
         transition: opacity 150ms ease;
     }
-    .tectonic .modal {
+    .step1 .modal {
         overflow: hidden;
         position: relative;
         margin: auto;
@@ -403,14 +408,14 @@ input,table {
         background: #fff;
         border-radius: 20px;
     }
-    .tectonic .modal__scroll-area {
+    .step1 .modal__scroll-area {
         height: inherit;
         overflow: auto;
         border-radius: inherit;
         position: relative;
         z-index: 1;
     }
-    .tectonic .modal__close-button {
+    .step1 .modal__close-button {
         background: transparent;
         border: none;
         margin-bottom: auto;
@@ -421,7 +426,7 @@ input,table {
         padding: 2em;
         z-index: 2;
     }
-    .tectonic .modal__header {
+    .step1 .modal__header {
         text-align: center;
         position: relative;
         display: flex;
@@ -432,38 +437,144 @@ input,table {
         min-height: 300px;
         z-index: 1;
     }
-    .tectonic .modal__content {
+    .step1 .modal__content {
         padding: 2em;
         color: #666;
         line-height: 1.5;
     }
-    .tectonic [data-modal-state="closed"] .modal-wrapper {
+    .step1 [data-modal-state="closed"] .modal-wrapper {
         pointer-events: none;
     }
-    .tectonic [data-modal-state="closed"] .overlay {
+    .step1 [data-modal-state="closed"] .overlay {
         pointer-events: none;
     }
-    .tectonic [data-modal-state="closed"] .modal {
+    .step1 [data-modal-state="closed"] .modal {
         opacity: 0;
     }
-    .tectonic [data-modal-state="closed"] .overlay {
+    .step1 [data-modal-state="closed"] .overlay {
         opacity: 0;
     }
-    .tectonic [data-modal-state="opening"] .modal__header, .tectonic [data-modal-state="closing"] .modal__header, .tectonic [data-modal-state="opening"] .modal__content, .tectonic [data-modal-state="closing"] .modal__content, .tectonic [data-modal-state="opening"] .modal__close-button, .tectonic [data-modal-state="closing"] .modal__close-button {
+    .step1 [data-modal-state="opening"] .modal__header, .step1 [data-modal-state="closing"] .modal__header, .step1 [data-modal-state="opening"] .modal__content, .step1 [data-modal-state="closing"] .modal__content, .step1 [data-modal-state="opening"] .modal__close-button, .step1 [data-modal-state="closing"] .modal__close-button {
         opacity: 0;
     }
-    .tectonic [data-modal-state="opening"] .overlay {
+    .step1 [data-modal-state="opening"] .overlay {
         transition: opacity 500ms ease;
     }
-    .tectonic [data-modal-state="closing"] .overlay {
+    .step1 [data-modal-state="closing"] .overlay {
         opacity: 0;
         transition: opacity 500ms ease;
     }
-    .tectonic [data-modal-state="open"] .modal__header, .tectonic [data-modal-state="open"] .modal__content {
+    .step1 [data-modal-state="open"] .modal__header, .step1 [data-modal-state="open"] .modal__content {
         transition: opacity 450ms;
     }
 
 }
+
+
+/* step2 */
+@media {
+    .step2 {
+        margin-top: 3rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-color: #F5F5F5;
+    }
+    .step2 .container{
+        max-width: 1220px;
+    }
+    .step2 .card-bracket{
+        background-color: white;
+        padding:  4px;
+        margin: 0 4px 0 4px;
+        border-radius: 10px;
+    }
+    .step2 .card {
+        font-family: iranyekanwebmedium;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+
+    .step2 .card-img-top {
+        height: 9.5rem;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+    .step2 .card .badge-offer {
+        font-size: 0.8rem;
+        position: absolute;
+        border-radius: 0.3rem;
+        right: 0.4rem;
+        top: 0.4rem;
+    }
+    .step2 .card .badge-heart {
+        background-color: #242424c7;
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        color: white;
+        position: absolute;
+        border-radius: 0.3rem;
+        left: 0.4rem;
+        top: 0.4rem;
+    }
+    .step2 .card .card-title{
+        font-family: IRANYekanBold;
+        color: #B7B7B7;
+        font-size: 0.75rem;
+    }
+    .step2 .card .badge-opinion {
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        font-size: 0.6rem;
+        font-weight: 200;
+        color: white;
+        position: absolute;
+        border-radius: 0.3rem;
+        left: 0.5rem;
+        top: 0.5rem;
+    }
+    .step2 .card .badge-room, .step2 .card .badge-guest,
+    .step2 .card .badge-aria{
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        font-size: 0.7rem;
+        font-weight: 200;
+        border-radius: 0.3rem;
+    }
+    .step2 .card .card-foot{
+        border-radius: 0.3rem;
+    }
+    .step2 .card .rental{
+        font-size: 0.7rem;
+        font-weight: 200;
+    }
+    .step2 .card .avatar{
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    .step2 .card .landlord{
+        font-size: 0.65rem;
+        color: #4B4B4B;
+    }
+    .step2 .card .price{
+        font-size: 0.7rem;
+        color: #4B4B4B;
+    }
+    .step2 .owl-nav {
+        position: absolute;
+        top: 9rem;
+        left: -0.7rem;
+        right: -0.7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .step2 .owl-nav .owl-prev span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+    .step2 .owl-nav .owl-next span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+}
+
 
 
 
