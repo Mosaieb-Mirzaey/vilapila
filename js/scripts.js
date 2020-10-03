@@ -1,5 +1,4 @@
 
-
 // ******* Persian Calendar *******
 $("#input-arrival-time").click(
     function () {
@@ -207,32 +206,34 @@ $('.counter').counterUp({
 });
 
 
+// ******* Persian Calendar *******
+function hoverIn(item){
+        item.previousElementSibling.style.display = "none"
+}
+function hoverOut(item){
+    item.previousElementSibling.style.display = "initial"
+}
 
 
-
-// ******* slider *******
-
-jQuery('.card-slider').slick({
-    slidesToShow:4,
-    autoplay: true,
-    slidesToScroll:1,
-    dots: false,
-    responsive:[
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1
-            }
-        }
-    ]
+// ******* Top Scroll Button *******
+new SmoothScroll ('a[href*="#"]', {
+    easing: 'linear',
+    speed: 1000,
 });
 
 
+// ******* Scroll Option *******
+$(Window).on('scroll load' , function () {
+    // if ($(Window).scrollTop() > 120) {
+    //     $('#navbar').css('background-color', 'rgba(20 , 40 , 60 , 0.7)').css('padding', '14px 40px');
+    // }
+    // else {
+    //     $('#navbar').css('background-color', 'rgba(0 , 0 , 0 , 0)').css('padding', '20px 40px');
+    // }
 
-
+    if ($(window).scrollTop() > 250) {
+        $('#go-to-top').css('opacity' , '1').css('visibility' , 'visible');
+    } else {
+        $('#go-to-top').css('opacity' , '0').css('visibility' , 'hidden');
+    }
+});
