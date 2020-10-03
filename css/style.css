@@ -290,7 +290,7 @@ input,table {
     .advantage .box .h6{
         font-size: 0.7rem;
     }
-    .advantage .p{
+    .advantage p{
         font-size: 8px !important;
     }
 }
@@ -385,10 +385,6 @@ input,table {
     .step1 .card-img-overlay a:hover {
         color: lightgreen;
     }
-
-
-
-
 
 }
 
@@ -500,21 +496,26 @@ input,table {
 
 /* Footer */
 @media {
-    #footer {
-        background-color: #171717;
+    #footer{
+        background-color: white;
+    }
+    .bg-footer {
+        background-color: #2c2653db;
         padding-top: 60px;
         font-weight: 300;
         font-size: 0.85rem;
+        border-radius: 2rem 2rem 0 0;
+    }
+    .subFooter{
+        background-color: #2c2653f0;
+        font-size: 0.8rem;
     }
 
-    #footer h5 {
-        font-weight: 400;
-        padding-bottom: 15px;
-        border-bottom: 2px solid #ed5151;
-        margin-bottom: 20px;
-        width: 9rem;
+    #footer h6, #footer h3 {
+        font-family: "IRANYekan ExtraBold";
+        padding-bottom: 0.7rem;
+        margin-bottom: 0.8rem;
     }
-
     #footer .trustSymbol{
         width: 15rem;
     }
@@ -525,7 +526,6 @@ input,table {
 
     #footer ul li {
         padding: 6px 0;
-        border-bottom: 1px solid #333;
     }
 
     #footer li:first-child {
@@ -533,7 +533,7 @@ input,table {
     }
 
     #footer li a {
-        color: #ddd;
+        color: #ffffff;
         transition-duration: 0.3s;
     }
 
@@ -542,12 +542,8 @@ input,table {
     }
 
     #footer li i {
-        color: #ddd;
+        color: #ffffff;
         padding-left: 3px;
-    }
-
-    #footer .link {
-        margin-top: 60px;
     }
 
     #footer .link a {
@@ -556,7 +552,7 @@ input,table {
         width: 34px;
         height: 34px;
         background-color: #444;
-        color: #eee;
+        color: #ffffff;
         border-radius: 50%;
         line-height: 2.1em;
         margin-left: 4px;
@@ -568,26 +564,43 @@ input,table {
         background-color: #2c6;
     }
 
+    #footer .mail{
+        height: 2.2rem;
+    }
     #footer input {
         float: right;
-        border: 0;
+        border-radius: 0 0.4rem 0.4rem 0;
         padding: 4px;
         width: 70%;
+        height: 100%;
+    }
+    #footer input::placeholder{
+        font-size: 0.7rem;
     }
 
     #footer button {
         float: right;
-        background-color: #ed5151;
-        border: 0;
+        border-radius: 0.4rem 0 0 0.4rem;
         width: 30%;
+        height: 100%;
         padding: 4px;
         color: #fff;
         cursor: pointer;
         transition-duration: 0.3s;
     }
 
+    #footer .subFooter .tag-box{
+        font-size: 0.65rem;
+    }
+    #footer .subFooter .tag{
+        background-color: #8c8c8c45;
+        border-radius: 0.4rem;
+    }
+
     #footer .copyright{
         font-family: iranyekanwebmedium;
+        background-color: #2E2855;
+        font-size: 0.8rem;
     }
 
 }
