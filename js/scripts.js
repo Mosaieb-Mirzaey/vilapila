@@ -208,7 +208,7 @@ $('.counter').counterUp({
 
 // ******* Persian Calendar *******
 function hoverIn(item){
-        item.previousElementSibling.style.display = "none"
+    item.previousElementSibling.style.display = "none"
 }
 function hoverOut(item){
     item.previousElementSibling.style.display = "initial"

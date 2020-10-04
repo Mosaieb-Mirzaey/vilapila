@@ -272,30 +272,6 @@ input,table {
 }
 
 
-/* Advantage */
-@media {
-    .advantage{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .advantage .box{
-        background: linear-gradient(180deg, #FFBA00 0%, #FF9100 100%);
-        width: 20rem;
-        height: 6rem;
-    }
-    .advantage .box .advantageIcon{
-        width: 3rem;
-        height: 2.5rem;
-    }
-    .advantage .box .h6{
-        font-size: 0.7rem;
-    }
-    .advantage p{
-        font-size: 8px !important;
-    }
-}
-
-
 /* Step-1 */
 @media {
     .step1 .title {
@@ -386,6 +362,51 @@ input,table {
         color: lightgreen;
     }
 
+}
+
+
+/* Advantage */
+@media {
+    .advantage{
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+    .advantage .box{
+        width: 19.5rem;
+        height: 5rem;
+        border-radius: 7px;
+        color: #707070;
+    }
+    .advantage .boxRight{
+        background: linear-gradient(180deg, #FFBA00 0%, #FF9100 100%);
+    }
+    .advantage .box .iconBg{
+        background-color: #7070701f;
+        height: 100%;
+        width: 6rem;
+        border-radius: 0 7px 7px 0;
+        /*margin-right: -0.95rem;*/
+    }
+    .advantage .box .advantageIcon{
+        width: 3rem;
+        height: 2.5rem;
+    }
+    .advantage .box h6{
+        font-size: 0.8rem;
+        font-family: "IRANYekan ExtraBold";
+    }
+    .advantage p{
+        font-size: 0.6rem;
+    }
+}
+
+
+/* Divider */
+@media {
+    .divider img{
+        width: 100%;
+        margin-top: -9rem;
+    }
 }
 
 
@@ -668,7 +689,7 @@ input,table {
 /* UHD devices (UHD desktops, 1400px and up) */
 @media (min-width: 1500px) {
     html{
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 
