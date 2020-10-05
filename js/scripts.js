@@ -1,4 +1,5 @@
 
+
 // ******* Persian Calendar *******
 $("#input-arrival-time").click(
     function () {
@@ -227,14 +228,10 @@ function step2HoverOut(item){
 // ******* Step-3 Card Animation *******
 let a;
 function step3HoverIn(item){
-    a= item;
-    // item.previousElementSibling.style.display = "initial";
-    // item.firstElementChild.setAttribute("data-animation-in", "animate__fadeIn")
-    // $(item).children("p").attr("data-animation-in", "animate__fadeIn")
-    $(item).children("p").attr("class", "text-danger")
+    $(item).children("h6, p").addClass("animate__animated animate__bounce")
 }
 function step3HoverOut(item){
-    // item.previousElementSibling.style.display = "initial"
+    $(item).children("h6, p").removeClass("animate__animated animate__bounce")
 }
 
 
@@ -260,3 +257,4 @@ $(Window).on('scroll load' , function () {
         $('#go-to-top').css('opacity' , '0').css('visibility' , 'hidden');
     }
 });
+
