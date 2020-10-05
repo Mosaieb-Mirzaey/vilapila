@@ -206,12 +206,35 @@ $('.counter').counterUp({
 });
 
 
-// ******* Persian Calendar *******
-function hoverIn(item){
+// ******* Step-1 Card Animation *******
+function step1HoverIn(item){
     item.previousElementSibling.style.display = "none"
 }
-function hoverOut(item){
+function step1HoverOut(item){
     item.previousElementSibling.style.display = "initial"
+}
+
+// ******* Step-2 Card Animation *******
+function step2HoverIn(item){
+    $(item).css({"background": 'rgba(141,125,255, 0.5)', 'transition': '1s'});
+    $(item).prev().css({"transform": 'scale(1.2) rotate(8deg)', 'transition': '1s'});
+}
+function step2HoverOut(item){
+    $(item).css({"background": 'rgba(141,125,255, 0)', 'transition': '1s'});
+    $(item).prev().css({"transform": 'scale(1) rotate(0deg)', 'transition': '1s'});
+}
+
+// ******* Step-3 Card Animation *******
+let a;
+function step3HoverIn(item){
+    a= item;
+    // item.previousElementSibling.style.display = "initial";
+    // item.firstElementChild.setAttribute("data-animation-in", "animate__fadeIn")
+    // $(item).children("p").attr("data-animation-in", "animate__fadeIn")
+    $(item).children("p").attr("class", "text-danger")
+}
+function step3HoverOut(item){
+    // item.previousElementSibling.style.display = "initial"
 }
 
 

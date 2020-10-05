@@ -90,7 +90,11 @@ input,table {
 .cursor-pointer {
     cursor: pointer;
 }
-
+.sectionTitle{
+    font-family: "IRANYekanExtraBold" , sans-serif;
+    font-size: 1.3rem;
+    color: #707070;
+}
 
 
 /* Header */
@@ -139,13 +143,13 @@ input,table {
         color: white;
         font-size: 0.8rem;
         padding: 2px 4px 2px 4px;
-        border-radius: 20px;
+        border-radius: 4px;
     }
     header .mainNav .searchInput{
         background-color: transparent;
         outline: none;
         border:none;
-        width: 9rem;
+        width: 15rem;
         color: white;
         text-indent: 30px;
     }
@@ -161,7 +165,6 @@ input,table {
         list-style-type: none;
         padding: 0;
         overflow: hidden;
-        justify-content: center;
     }
     header .mainNav ul>li, #banner .category ul>li {
         float: right;
@@ -304,9 +307,7 @@ input,table {
         right: 0;
         left: 0;
     }
-    .h-cardHover{
-        display: none;
-    }
+
     .step1 .owl-nav {
         position: absolute;
         top: 3.5rem;
@@ -403,7 +404,7 @@ input,table {
 
 /* Divider */
 @media {
-    .divider img{
+    .divider1 img{
         width: 100%;
         margin-top: -9rem;
     }
@@ -413,9 +414,8 @@ input,table {
 /* step2 */
 @media {
     .step2 {
-        margin-top: 3rem;
         padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-bottom: 1rem;
         background-color: #ffffff;
     }
     .step2 .container{
@@ -428,17 +428,28 @@ input,table {
         border-radius: 10px;
     }
     .step2 .card {
-        font-family: iranyekanwebmedium;
+        font-family: iranyekanwebmedium, sans-serif;
         position: relative;
-        border-radius: 10px;
-        box-shadow: 0 28px 19px -23px #4c4c4c42;
-    }
-
-    .step2 .card-img-top {
-        height: 9.5rem;
         border-radius: 10px 10px 0 0;
         box-shadow: 0 28px 19px -23px #4c4c4c42;
     }
+
+    .step2 .card .imgWrapper{
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .step2 .card-img-top {
+        height: 10rem;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+
+    .step2 .card .imgWrapper .card-img-overlay{
+        cursor: pointer;
+    }
+
+
     .step2 .card .badge-offer {
         font-size: 0.8rem;
         position: absolute;
@@ -512,6 +523,88 @@ input,table {
         font-size: 2rem;
         color: #FF6161;
     }
+}
+
+
+/* Step-3 */
+@media {
+    .step3 .title {
+        color: #545454;
+    }
+    .step3 .container{
+        max-width: 1220px;
+    }
+    .step3 .card-bracket{
+        background-color: white;
+        padding:  4px;
+        margin: 0 4px 0 4px;
+        border-radius: 10px;
+    }
+    .step3 .card {
+        font-family: iranyekanwebmedium, sans-serif;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+
+    .step3 .card-img-top {
+        height: 9.5rem;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+
+    .step3 .owl-nav {
+        position: absolute;
+        top: 3.5rem;
+        left: -0.7rem;
+        right: -0.7rem;
+        display: flex;
+        justify-content: space-between;
+        z-index: -1;
+    }
+    .step3 .owl-nav .owl-prev span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+    .step3 .owl-nav .owl-next span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+
+    .step3 .card-img-overlay {
+        background: linear-gradient(0deg, rgba(21, 14, 82, 0.588) 0%, rgba(26, 16, 100, 0) 105.4%);
+        color: white;
+        top: 0;
+        transition-duration: 0.4s;
+        opacity: 1;
+    }
+
+    .step3 .card {
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .step3 .card-img-overlay h6 {
+        font-family: "IRANYekanExtraBold", sans-serif;
+    }
+
+    .step3 .card-img-overlay .step3-price {
+        font-family: "iranyekanwebbold", sans-serif;
+    }
+
+    .step3 .card-img-overlay p {
+        font-size: 0.75rem;
+    }
+
+    .step3 .card-img-overlay a {
+        padding: 0 8px;
+        color: white;
+    }
+
+    .step3 .card-img-overlay a:hover {
+        color: lightgreen;
+    }
+
 }
 
 
