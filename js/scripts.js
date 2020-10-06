@@ -9,8 +9,8 @@ $("#input-arrival-time").click(
             "format": "LL",
             "viewMode": "day",
             "initialValue": true,
-            "minDate": 1601264959074,
-            "maxDate": 1651964959074,
+            "minDate":  new Date(),
+            // "maxDate": 1651964959074,
             "position": "auto",
             "altFormat": " dddd  DD / MMM /YYYY",
             "altField": "#arrival-time",
@@ -99,6 +99,8 @@ $("#input-arrival-time").click(
 
         });
     })
+
+
 $("#input-departure-time").click(
     function (){
         $("#input-departure-time").persianDatepicker({
@@ -107,8 +109,8 @@ $("#input-departure-time").click(
             "format": "LL",
             "viewMode": "day",
             "initialValue": true,
-            "minDate": 1601264959074,
-            "maxDate": 1651964959074,
+            "minDate":  new Date(),
+            // "maxDate": 1651964959074,
             "position": "auto",
             "altFormat": " dddd  DD / MMM /YYYY",
             "altField": "#departure-time",
