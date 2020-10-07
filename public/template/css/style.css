@@ -1,0 +1,935 @@
+
+/*IRANSans Font*/
+@media {
+    @font-face {font-family: 'IRANSansRegular';
+        src: url(../fonts/iransans/IRANSans.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_UltraLight';
+        src: url(../fonts/iransans/IRANSans_UltraLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_Light';
+        src: url(../fonts/iransans/IRANSans_Light.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_Medium';
+        src: url(../fonts/iransans/IRANSans_Medium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_Bold';
+        src: url(../fonts/iransans/IRANSans_Bold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+}
+
+
+
+/*IRAN Yekan Font*/
+@media {
+    @font-face {font-family: 'IRANYekanRegular';
+        src: url(../fonts/IRANYekan/IRANYekanRegular.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanThin';
+        src: url(../fonts/IRANYekan/IRANYekanThin.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanLight';
+        src: url(../fonts/IRANYekan/IRANYekanLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanMedium';
+        src: url(../fonts/IRANYekan/IRANYekanMedium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanBold';
+        src: url(../fonts/IRANYekan/IRANYekanBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanExtraBold';
+        src: url(../fonts/IRANYekan/IRANYekanExtraBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanBlack';
+        src: url(../fonts/IRANYekan/IRANYekanBlack.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'iranyekanwebmedium';
+        src: url(../fonts/IRANYekan/iranyekanwebmedium.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'iranyekanwebbold';
+        src: url(../fonts/IRANYekan/iranyekanwebbold.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+html{
+    font-size: 10px;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: IRANYekanRegular;
+}
+
+a {
+    text-decoration: none !important;
+}
+input,table {
+    font-family: iranyekanwebmedium;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.sectionTitle{
+    font-family: "IRANYekanExtraBold" , sans-serif;
+    font-size: 1.3rem;
+    color: #707070;
+}
+
+
+/* Header */
+@media {
+    header .topNav span, .telIcon  {
+        color: #070510;
+        font-size: 0.8rem;
+    }
+    header .topNav span:hover, header .topNav a:hover, .telIcon:hover  {
+        font-size: 0.92rem;
+        color: #FF6161;
+        text-shadow: 0 0 15px #FF6161;
+        transition: 0.5s;
+    }
+
+    header .topNav i, .telIcon i {
+        color: #ED5151;
+        font-size: 0.9rem;
+        vertical-align: initial;
+    }
+
+    header .topNav .btnNav .btnLogin {
+        background-color: #ED5151;
+    }
+    header .topNav .btnNav>button {
+        transition:all 1s;
+        background: #9c31df75;
+        border: 1px solid #ffffffcc;
+    }
+    header .topNav .btnNav>button:hover {
+        transition:all 0.5s;
+        background: #ED5151;
+        border: 2px solid #ffc5fc;
+    }
+
+    header .mainNav{
+        background: #331FC8;
+        color: white;
+    }
+
+    header .mainNav .navbar-brand>img {
+        width: 9rem;
+    }
+    header .mainNav .searchBox{
+        background-color: #FF6161;
+        color: white;
+        font-size: 0.8rem;
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+    }
+    header .mainNav .searchInput{
+        background-color: transparent;
+        outline: none;
+        border:none;
+        width: 15rem;
+        color: white;
+        text-indent: 30px;
+    }
+
+    header .mainNav .searchInput::placeholder {
+        color: white;
+        text-indent: 30px;
+        text-align: right;
+    }
+
+    header ul, #banner ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+    }
+    header .mainNav ul>li, #banner .category ul>li {
+        float: right;
+        padding: 5px;
+    }
+
+    header .mainNav a, header .topNav .btnNav button {
+        color: #ffffffcc;
+        font-size: 0.8rem;
+        font-family: "IRANYekanExtraBold";
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+
+    header .mainNav ul>li>a:hover {
+        font-size: 0.92rem;
+        color: #FF6161;
+        text-shadow: 0 0 15px #FF6161;
+        transition: 0.5s;
+    }
+
+    header .mainNav .navbarNav {
+        margin-top: 0.5rem;
+    }
+}
+
+
+/* Banner */
+@media {
+    #banner{
+        position: relative;
+        background: url(../image/Banner/Banner.png) no-repeat;
+        background-size: 100% auto;
+        height: 500px;
+    }
+    #banner:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 0;
+        top: 0;
+        background: linear-gradient(-339deg, #331fc880 34%, #ffba0096 98%);
+    }
+
+    .bannerContent{
+        position: relative;
+        z-index: 10;
+        top: 10rem;
+        bottom: 70px;
+    }
+
+    #banner .dataBox {
+        background: #FFFFFF;
+        border-radius: 7px;
+    }
+
+    #banner .dataBox .input-city,
+    #banner .dataBox #input-arrival-time,
+    #banner .dataBox #input-departure-time,
+    #banner .dataBox .search-btn{
+        border: 1px solid #DCDCDC;
+        height: 4rem;
+        border-radius: 7px;
+        padding:0 0.6rem 0.6rem 0.6rem;
+    }
+    #banner .dataBox .input-city{
+        background-color: rgb(244,244,244);
+    }
+    #banner .dataBox label{
+        font-family: "IRANSans Light",sans-serif;
+        font-size: 0.5rem;
+        margin: 0 0.9rem 0 0;
+    }
+
+    #banner .dataBox .form-control {
+        background-color: transparent;
+        border: none;
+    }
+
+    #banner .dataBox input::placeholder, #banner input:focus {
+        font-family: "IRANYekanExtraBold", sans-serif;
+        font-size: 0.8rem;
+        color: #707070;
+        box-shadow: none;
+    }
+
+    #banner .datepicker-plot-area {
+        width: 19rem;
+    }
+
+    #banner .category li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 3px;
+        text-decoration: none;
+    }
+
+    #banner .category li a:hover {
+        background-color: #111111;
+    }
+}
+
+
+/* Counter Top */
+@media {
+    #counterTop{
+        margin-top: -3rem;
+    }
+    #counterTop .counterIcon{
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+    }
+    #counterTop h3 {
+        font-family: iranyekanwebbold;
+    }
+    #counterTop div[class*="iconCover"]{
+        font-size: 0.8rem;
+        font-family: "IRANYekanExtraBold";
+        border-radius: 10px;
+        padding: 0.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    #counterTop .iconCover1 {
+        background-color: #ffa22b26;
+    }
+    #counterTop .iconCover2{
+        background-color: #ed51512e;
+    }
+    #counterTop .iconCover3{
+        background-color: #9c31df2e;
+    }
+}
+
+
+/* Step-1 */
+@media {
+    .step1 .title {
+        color: #545454;
+    }
+    .step1 .container{
+        max-width: 1220px;
+    }
+    .step1 .card-bracket{
+        background-color: white;
+        padding:  4px;
+        margin: 0 4px 0 4px;
+        border-radius: 10px;
+    }
+    .step1 .card {
+        font-family: iranyekanwebmedium;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+
+    .step1 .card-img-top {
+        height: 9.5rem;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+    .step1 .card .titleContain {
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        left: 0;
+    }
+
+    .step1 .owl-nav {
+        position: absolute;
+        top: 3.5rem;
+        left: -0.7rem;
+        right: -0.7rem;
+        display: flex;
+        justify-content: space-between;
+        z-index: -1;
+    }
+    .step1 .owl-nav .owl-prev span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+    .step1 .owl-nav .owl-next span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+
+    .step1 .card-img-overlay {
+        background: linear-gradient(-225deg, rgba(74, 61, 184, 0.8) 48%, rgba(50, 228, 179, 0.8) 100%);
+        text-align: center;
+        padding-top: 10%;
+        color: white;
+        top: -50%;
+        transition-duration: 0.4s;
+        opacity: 0;
+    }
+
+    .step1 .card .card-img-overlay:hover  {
+        top: 0;
+        opacity: 1;
+    }
+
+    .step1 .card {
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .step1 .card-img-overlay h4 {
+        margin-bottom: 16px;
+    }
+
+    .step1 .card-img-overlay p {
+        margin-bottom: 20px;
+    }
+
+    .step1 .card-img-overlay a {
+        padding: 0 8px;
+        color: white;
+    }
+
+    .step1 .card-img-overlay a:hover {
+        color: lightgreen;
+    }
+
+}
+
+
+/* Advantage */
+@media {
+    .advantage{
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+    .advantage .box{
+        width: 19.5rem;
+        height: 5rem;
+        border-radius: 7px;
+        color: #707070;
+    }
+    .advantage .boxRight{
+        background: linear-gradient(180deg, #FFBA00 0%, #FF9100 100%);
+    }
+    .advantage .box .iconBg{
+        background-color: #7070701f;
+        height: 100%;
+        width: 6rem;
+        border-radius: 0 7px 7px 0;
+        /*margin-right: -0.95rem;*/
+    }
+    .advantage .box .advantageIcon{
+        width: 3rem;
+        height: 2.5rem;
+    }
+    .advantage .box h6{
+        font-size: 0.8rem;
+        font-family: "IRANYekan ExtraBold";
+    }
+    .advantage p{
+        font-size: 0.6rem;
+    }
+}
+
+
+/* Divider */
+@media {
+    .divider1 img{
+        width: 100%;
+        margin-top: -9rem;
+    }
+}
+
+
+/* step2 */
+@media {
+    .step2 {
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+        background-color: #ffffff;
+    }
+    .step2 .container{
+        max-width: 1220px;
+    }
+    .step2 .card-bracket{
+        background-color: white;
+        padding:  4px;
+        margin: 0 4px 0 4px;
+        border-radius: 10px;
+    }
+    .step2 .card {
+        font-family: iranyekanwebmedium, sans-serif;
+        position: relative;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+
+    .step2 .card .imgWrapper{
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .step2 .card-img-top {
+        height: 10rem;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+
+    .step2 .card .imgWrapper .card-img-overlay{
+        cursor: pointer;
+    }
+
+
+    .step2 .card .badge-offer {
+        font-size: 0.8rem;
+        position: absolute;
+        border-radius: 0.3rem;
+        right: 0.4rem;
+        top: 0.4rem;
+    }
+    .step2 .card .badge-heart {
+        background-color: #242424c7;
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        color: white;
+        position: absolute;
+        border-radius: 0.3rem;
+        left: 0.4rem;
+        top: 0.4rem;
+    }
+    .step2 .card .card-title{
+        font-family: IRANYekanBold;
+        color: #B7B7B7;
+        font-size: 0.75rem;
+    }
+    .step2 .card .badge-opinion {
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        font-size: 0.6rem;
+        font-weight: 200;
+        color: white;
+        position: absolute;
+        border-radius: 0.3rem;
+        left: 0.5rem;
+        top: 0.5rem;
+    }
+    .step2 .card .badge-room, .step2 .card .badge-guest,
+    .step2 .card .badge-aria{
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        font-size: 0.7rem;
+        font-weight: 200;
+        border-radius: 0.3rem;
+    }
+    .step2 .card .card-foot{
+        border-radius: 0.3rem;
+    }
+    .step2 .card .rental{
+        font-size: 0.7rem;
+        font-weight: 200;
+    }
+    .step2 .card .avatar{
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    .step2 .card .landlord{
+        font-size: 0.65rem;
+        color: #4B4B4B;
+    }
+    .step2 .card .price{
+        font-size: 0.7rem;
+        color: #4B4B4B;
+    }
+    .step2 .owl-nav {
+        position: absolute;
+        top: 9rem;
+        left: -0.7rem;
+        right: -0.7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .step2 .owl-nav .owl-prev span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+    .step2 .owl-nav .owl-next span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+}
+
+
+/* Step-3 */
+/*@media {*/
+/*    .step3 .title {*/
+/*        color: #545454;*/
+/*    }*/
+/*    .step3 .container{*/
+/*        max-width: 1220px;*/
+/*    }*/
+/*    .step3 .card-bracket{*/
+/*        background-color: white;*/
+/*        padding:  4px;*/
+/*        margin: 0 4px 0 4px;*/
+/*        border-radius: 10px;*/
+/*    }*/
+/*    .step3 .card {*/
+/*        font-family: iranyekanwebmedium, sans-serif;*/
+/*        position: relative;*/
+/*        border-radius: 10px;*/
+/*        box-shadow: 0 28px 19px -23px #4c4c4c42;*/
+/*    }*/
+
+/*    .step3 .card-img-top {*/
+/*        height: 9.5rem;*/
+/*        border-radius: 10px 10px 0 0;*/
+/*        box-shadow: 0 28px 19px -23px #4c4c4c42;*/
+/*    }*/
+
+/*    .step3 .owl-nav {*/
+/*        position: absolute;*/
+/*        top: 3.5rem;*/
+/*        left: -0.7rem;*/
+/*        right: -0.7rem;*/
+/*        display: flex;*/
+/*        justify-content: space-between;*/
+/*        z-index: -1;*/
+/*    }*/
+/*    .step3 .owl-nav .owl-prev span {*/
+/*        font-size: 2rem;*/
+/*        color: #FF6161;*/
+/*    }*/
+/*    .step3 .owl-nav .owl-next span {*/
+/*        font-size: 2rem;*/
+/*        color: #FF6161;*/
+/*    }*/
+
+/*    .step3 .card-img-overlay {*/
+/*        background: linear-gradient(0deg, rgba(21, 14, 82, 0.588) 0%, rgba(26, 16, 100, 0) 105.4%);*/
+/*        color: white;*/
+/*        top: 0;*/
+/*        transition-duration: 0.4s;*/
+/*        opacity: 1;*/
+/*    }*/
+
+/*    .step3 .card {*/
+/*        overflow: hidden;*/
+/*        box-shadow: 0 2px 4px rgba(0,0,0,0.3);*/
+/*    }*/
+
+/*    .step3 .card-img-overlay h6 {*/
+/*        font-family: "IRANYekanExtraBold", sans-serif;*/
+/*    }*/
+
+/*    .step3 .card-img-overlay .step3-price {*/
+/*        font-family: "iranyekanwebbold", sans-serif;*/
+/*    }*/
+
+/*    .step3 .card-img-overlay p {*/
+/*        font-size: 0.75rem;*/
+/*    }*/
+
+/*    .step3 .card-img-overlay a {*/
+/*        padding: 0 8px;*/
+/*        color: white;*/
+/*    }*/
+
+/*    .step3 .card-img-overlay a:hover {*/
+/*        color: lightgreen;*/
+/*    }*/
+
+/*}*/
+
+
+/* step3 */
+@media {
+    .step3 {
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+        background-color: #ffffff;
+    }
+    .step3 .container{
+        max-width: 1220px;
+    }
+    .step3 .card-bracket{
+        background-color: white;
+        padding:  4px;
+        margin: 0 4px 0 4px;
+        border-radius: 10px;
+    }
+    .step3 .card {
+        font-family: iranyekanwebmedium, sans-serif;
+        position: relative;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+
+    .step3 .card .imgWrapper{
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .step3 .card-img-top {
+        height: 10rem;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+
+    .step3 .card .imgWrapper .card-img-overlay{
+        cursor: pointer;
+    }
+
+
+    .step3 .card .badge-offer {
+        font-size: 0.8rem;
+        position: absolute;
+        border-radius: 0.3rem;
+        right: 0.4rem;
+        top: 0.4rem;
+    }
+    .step3 .card .badge-heart {
+        background-color: #242424c7;
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        color: white;
+        position: absolute;
+        border-radius: 0.3rem;
+        left: 0.4rem;
+        top: 0.4rem;
+    }
+    .step3 .card .card-title{
+        font-family: IRANYekanBold;
+        color: #B7B7B7;
+        font-size: 0.75rem;
+    }
+    .step3 .card .badge-opinion {
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        font-size: 0.6rem;
+        font-weight: 200;
+        color: white;
+        position: absolute;
+        border-radius: 0.3rem;
+        left: 0.5rem;
+        top: 0.5rem;
+    }
+    .step3 .card .badge-room, .step3 .card .badge-guest,
+    .step3 .card .badge-aria{
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        font-size: 0.7rem;
+        font-weight: 200;
+        border-radius: 0.3rem;
+    }
+    .step3 .card .card-foot{
+        border-radius: 0.3rem;
+    }
+    .step3 .card .rental{
+        font-size: 0.7rem;
+        font-weight: 200;
+    }
+    .step3 .card .avatar{
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    .step3 .card .landlord{
+        font-size: 0.65rem;
+        color: #4B4B4B;
+    }
+    .step3 .card .price{
+        font-size: 0.7rem;
+        color: #4B4B4B;
+    }
+    .step3 .owl-nav {
+        position: absolute;
+        top: 9rem;
+        left: -0.7rem;
+        right: -0.7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .step3 .owl-nav .owl-prev span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+    .step3 .owl-nav .owl-next span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+}
+
+
+
+/* Footer */
+@media {
+    #footer{
+        background-color: white;
+    }
+    .bg-footer {
+        background-color: #2c2653db;
+        padding-top: 60px;
+        font-weight: 300;
+        font-size: 0.85rem;
+        border-radius: 2rem 2rem 0 0;
+    }
+    .subFooter{
+        background-color: #2c2653f0;
+        font-size: 0.8rem;
+    }
+
+    #footer h6, #footer h3 {
+        font-family: "IRANYekan ExtraBold";
+        padding-bottom: 0.7rem;
+        margin-bottom: 0.8rem;
+    }
+    #footer .trustSymbol{
+        width: 15rem;
+    }
+
+    #footer .col-lg-3 {
+        margin-bottom: 20px;
+    }
+
+    #footer ul li {
+        padding: 6px 0;
+    }
+
+    #footer li:first-child {
+        padding-top: 0;
+    }
+
+    #footer li a {
+        color: #ffffff;
+        transition-duration: 0.3s;
+    }
+
+    #footer li a:hover {
+        color: #2c6;
+    }
+
+    #footer li i {
+        color: #ffffff;
+        padding-left: 3px;
+    }
+
+    #footer .link a {
+        font-size: 18px;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        background-color: #444;
+        color: #ffffff;
+        border-radius: 50%;
+        line-height: 2.1em;
+        margin-left: 4px;
+        text-align: center;
+        transition-duration: 0.3s;
+    }
+
+    #footer .link a:hover {
+        background-color: #2c6;
+    }
+
+    #footer .mail{
+        height: 2.2rem;
+    }
+    #footer input {
+        float: right;
+        border-radius: 0 0.4rem 0.4rem 0;
+        padding: 4px;
+        width: 70%;
+        height: 100%;
+    }
+    #footer input::placeholder{
+        font-size: 0.7rem;
+    }
+
+    #footer button {
+        float: right;
+        border-radius: 0.4rem 0 0 0.4rem;
+        width: 30%;
+        height: 100%;
+        padding: 4px;
+        color: #fff;
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+
+    #footer .subFooter .tag-box{
+        font-size: 0.65rem;
+    }
+    #footer .subFooter .tag{
+        background-color: #8c8c8c45;
+        border-radius: 0.4rem;
+    }
+
+    #footer .copyright{
+        font-family: iranyekanwebmedium;
+        background-color: #2E2855;
+        font-size: 0.8rem;
+    }
+
+}
+
+
+/* Top Scroll */
+@media {
+    #go-to-top {
+        position: fixed;
+        left: 15px;
+        bottom: 15px;
+        display: inline-block;
+        width: 46px;
+        height: 46px;
+        background-color: #ed5151;
+        color: white;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 2.8em;
+        transition-duration: 0.5s;
+    }
+
+    #go-to-top:hover {
+        background-color: #331FC8;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html{
+        font-size: 12px;
+    }
+
+}
+
+/* (Mobile & tablet devices, max width 992px) */
+@media (max-width: 992px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html{
+        font-size: 16px;
+    }
+
+}
+
+/* UHD devices (UHD desktops, 1400px and up) */
+@media (min-width: 1500px) {
+    html{
+        font-size: 17px;
+    }
+}
+
