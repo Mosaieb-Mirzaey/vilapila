@@ -76,8 +76,8 @@ html{
 }
 
 body {
-    background-color: #F5F5F5;
-    font-family: IRANYekanRegular;
+    background-color: #ffffff;
+    font-family: IRANYekanRegular, sans-serif;
 }
 
 a {
@@ -278,6 +278,9 @@ input,table {
     #counterTop{
         margin-top: -3rem;
     }
+    #counterTop .card{
+        box-shadow: 0 9px 22px 0 rgba(177, 177, 177, 0.6);
+    }
     #counterTop .counterIcon{
         display: inline-block;
         width: 3rem;
@@ -404,10 +407,11 @@ input,table {
         margin-bottom: 6vw;
     }
     .advantage .box{
-        width: 19.5rem;
+        width: 100%;
         height: 5rem;
         border-radius: 7px;
         color: #707070;
+        box-shadow: 0 0 10px -1px rgba(218, 218, 218 ,0.9);
     }
     .advantage .boxRight{
         background: linear-gradient(180deg, #FFBA00 0%, #FF9100 100%);
@@ -433,7 +437,7 @@ input,table {
 }
 
 
-/* Divider */
+/* Divider - 1 */
 @media {
     .divider1 img{
         width: 100%;
@@ -442,7 +446,7 @@ input,table {
 }
 
 
-/* step2 */
+/* step2 */  /* step4 */
 @media {
     .step2 {
         padding-top: 4rem;
@@ -454,7 +458,7 @@ input,table {
     }
     .step2 .card-bracket{
         background-color: white;
-        padding:  4px;
+        padding: 4px 0;
         margin: 0 4px 0 4px;
         border-radius: 10px;
     }
@@ -538,6 +542,12 @@ input,table {
         font-size: 0.7rem;
         color: #4B4B4B;
     }
+    .step2 .card .reserveBtn{
+    width: 30%;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
     .step2 .owl-nav {
         position: absolute;
         top: 9rem;
@@ -556,92 +566,17 @@ input,table {
     }
 }
 
-
-/* Step-3 */
-/*@media {*/
-/*    .step3 .title {*/
-/*        color: #545454;*/
-/*    }*/
-/*    .step3 .container{*/
-/*        max-width: 1220px;*/
-/*    }*/
-/*    .step3 .card-bracket{*/
-/*        background-color: white;*/
-/*        padding:  4px;*/
-/*        margin: 0 4px 0 4px;*/
-/*        border-radius: 10px;*/
-/*    }*/
-/*    .step3 .card {*/
-/*        font-family: iranyekanwebmedium, sans-serif;*/
-/*        position: relative;*/
-/*        border-radius: 10px;*/
-/*        box-shadow: 0 28px 19px -23px #4c4c4c42;*/
-/*    }*/
-
-/*    .step3 .card-img-top {*/
-/*        height: 9.5rem;*/
-/*        border-radius: 10px 10px 0 0;*/
-/*        box-shadow: 0 28px 19px -23px #4c4c4c42;*/
-/*    }*/
-
-/*    .step3 .owl-nav {*/
-/*        position: absolute;*/
-/*        top: 3.5rem;*/
-/*        left: -0.7rem;*/
-/*        right: -0.7rem;*/
-/*        display: flex;*/
-/*        justify-content: space-between;*/
-/*        z-index: -1;*/
-/*    }*/
-/*    .step3 .owl-nav .owl-prev span {*/
-/*        font-size: 2rem;*/
-/*        color: #FF6161;*/
-/*    }*/
-/*    .step3 .owl-nav .owl-next span {*/
-/*        font-size: 2rem;*/
-/*        color: #FF6161;*/
-/*    }*/
-
-/*    .step3 .card-img-overlay {*/
-/*        background: linear-gradient(0deg, rgba(21, 14, 82, 0.588) 0%, rgba(26, 16, 100, 0) 105.4%);*/
-/*        color: white;*/
-/*        top: 0;*/
-/*        transition-duration: 0.4s;*/
-/*        opacity: 1;*/
-/*    }*/
-
-/*    .step3 .card {*/
-/*        overflow: hidden;*/
-/*        box-shadow: 0 2px 4px rgba(0,0,0,0.3);*/
-/*    }*/
-
-/*    .step3 .card-img-overlay h6 {*/
-/*        font-family: "IRANYekanExtraBold", sans-serif;*/
-/*    }*/
-
-/*    .step3 .card-img-overlay .step3-price {*/
-/*        font-family: "iranyekanwebbold", sans-serif;*/
-/*    }*/
-
-/*    .step3 .card-img-overlay p {*/
-/*        font-size: 0.75rem;*/
-/*    }*/
-
-/*    .step3 .card-img-overlay a {*/
-/*        padding: 0 8px;*/
-/*        color: white;*/
-/*    }*/
-
-/*    .step3 .card-img-overlay a:hover {*/
-/*        color: lightgreen;*/
-/*    }*/
-
-/*}*/
-
+/* Divider - 3 */
+@media {
+    .divider3 img{
+        width: 100%;
+        margin-top: -3rem;
+    }
+}
 
 /* step3 */
 @media {
-    .step3 {
+    .step3{
         padding-top: 4rem;
         padding-bottom: 1rem;
         background-color: #ffffff;
@@ -651,99 +586,32 @@ input,table {
     }
     .step3 .card-bracket{
         background-color: white;
-        padding:  4px;
+        padding: 4px 0;
         margin: 0 4px 0 4px;
         border-radius: 10px;
     }
     .step3 .card {
         font-family: iranyekanwebmedium, sans-serif;
         position: relative;
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px;
         box-shadow: 0 28px 19px -23px #4c4c4c42;
-    }
-
-    .step3 .card .imgWrapper{
-        overflow: hidden;
-        border-radius: 10px 10px 0 0;
     }
 
     .step3 .card-img-top {
         height: 10rem;
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px;
         box-shadow: 0 28px 19px -23px #4c4c4c42;
     }
 
-    .step3 .card .imgWrapper .card-img-overlay{
-        cursor: pointer;
-    }
-
-
-    .step3 .card .badge-offer {
-        font-size: 0.8rem;
-        position: absolute;
-        border-radius: 0.3rem;
-        right: 0.4rem;
-        top: 0.4rem;
-    }
-    .step3 .card .badge-heart {
-        background-color: #242424c7;
-        padding: 0.1rem 0.3rem 0 0.3rem;
-        color: white;
-        position: absolute;
-        border-radius: 0.3rem;
-        left: 0.4rem;
-        top: 0.4rem;
-    }
-    .step3 .card .card-title{
-        font-family: IRANYekanBold;
-        color: #B7B7B7;
-        font-size: 0.75rem;
-    }
-    .step3 .card .badge-opinion {
-        padding: 0.1rem 0.3rem 0 0.3rem;
-        font-size: 0.6rem;
-        font-weight: 200;
-        color: white;
-        position: absolute;
-        border-radius: 0.3rem;
-        left: 0.5rem;
-        top: 0.5rem;
-    }
-    .step3 .card .badge-room, .step3 .card .badge-guest,
-    .step3 .card .badge-aria{
-        padding: 0.1rem 0.3rem 0 0.3rem;
-        font-size: 0.7rem;
-        font-weight: 200;
-        border-radius: 0.3rem;
-    }
-    .step3 .card .card-foot{
-        border-radius: 0.3rem;
-    }
-    .step3 .card .rental{
-        font-size: 0.7rem;
-        font-weight: 200;
-    }
-    .step3 .card .avatar{
-        width: 1.7rem;
-        height: 1.7rem;
-    }
-    .step3 .card .landlord{
-        font-size: 0.65rem;
-        color: #4B4B4B;
-    }
-    .step3 .card .price{
-        font-size: 0.7rem;
-        color: #4B4B4B;
-    }
     .step3 .owl-nav {
         position: absolute;
-        top: 9rem;
+        top: 4rem;
         left: -0.7rem;
         right: -0.7rem;
         display: flex;
         justify-content: space-between;
     }
-    .step3 .owl-nav .owl-prev span {
+    .step3 .owl-nav .owl-prev span  {
         font-size: 2rem;
         color: #FF6161;
     }
@@ -754,11 +622,25 @@ input,table {
 }
 
 
+/* step5 */
+@media {
+    .step5 .title{
+        color: #545454;
+    }
+    .step5-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
 
 /* Footer */
 @media {
     #footer{
         background-color: white;
+        border-radius: 2rem 2rem 0 0;
     }
     .bg-footer {
         background-color: #2c2653db;
@@ -859,7 +741,7 @@ input,table {
     }
 
     #footer .copyright{
-        font-family: iranyekanwebmedium;
+        font-family: iranyekanwebmedium, sans-serif;
         background-color: #2E2855;
         font-size: 0.8rem;
     }
@@ -871,7 +753,7 @@ input,table {
 @media {
     #go-to-top {
         position: fixed;
-        left: 15px;
+        left: 3rem;
         bottom: 15px;
         display: inline-block;
         width: 46px;
@@ -882,6 +764,7 @@ input,table {
         border-radius: 50%;
         line-height: 2.8em;
         transition-duration: 0.5s;
+        z-index: 10;
     }
 
     #go-to-top:hover {
